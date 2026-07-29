@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)" rx="36"/>
+  <circle cx="950" cy="160" r="140" fill="#ffffff" opacity="0.08"/>
+  <circle cx="290" cy="490" r="220" fill="#ffffff" opacity="0.06"/>
+  <text x="110" y="260" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" fill="#f8fafc">Shyam Kishor Sah</text>
+  <text x="110" y="335" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="500" fill="#dbeafe">Full Stack Developer · AI/ML Enthusiast · Researcher</text>
+  <rect x="110" y="380" width="180" height="8" rx="4" fill="#60a5fa"/>
+  <rect x="110" y="400" width="260" height="8" rx="4" fill="#a78bfa"/>
+</svg>

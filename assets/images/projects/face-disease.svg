@@ -1,0 +1,9 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="28" fill="#130b24"/>
+  <circle cx="400" cy="245" r="140" fill="#1f2937" stroke="#f43f5e" stroke-width="8"/>
+  <circle cx="350" cy="230" r="18" fill="#f8fafc"/>
+  <circle cx="450" cy="230" r="18" fill="#f8fafc"/>
+  <path d="M310 285c25 34 73 36 100 0" stroke="#f8fafc" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <rect x="165" y="95" width="470" height="320" rx="28" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="435" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">Face Disease Detection</text>
+</svg>

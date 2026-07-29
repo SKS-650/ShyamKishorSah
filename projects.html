@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Shyam Kishor Sah — Full Stack Developer & AI/ML Enthusiast</title>
+  <meta name="description" content="Explore Shyam Kishor Sah's projects — AI healthcare, computer vision, IoT automation, and full-stack applications." />
+  <meta name="keywords" content="AI Projects, Machine Learning, Computer Vision, Full Stack, Nepal, Portfolio" />
+  <meta name="author" content="Shyam Kishor Sah" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourportfolio.com/projects.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects | Shyam Kishor Sah" />
+  <meta property="og:description" content="AI systems, full-stack applications, IoT, and research projects built end-to-end." />
+  <meta property="og:image" content="assets/images/profile/og-image.svg" />
+  <link rel="icon" href="assets/images/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <script>(function(){const t=localStorage.getItem('portfolio-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()</script>
+</head>
+<body class="loading">
+<div class="page-transition" aria-hidden="true"></div>
+<div id="page-loader" aria-hidden="true">
+  <div class="loader__logo">S.</div>
+  <div class="loader__bar"><div class="loader__progress"></div></div>
+  <span class="loader__text">Loading Projects</span>
+</div>
+<div id="scroll-progress" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+<div class="bg-blobs" aria-hidden="true">
+  <div class="bg-blob bg-blob--1"></div>
+  <div class="bg-blob bg-blob--2"></div>
+  <div class="bg-blob bg-blob--3"></div>
+</div>
+<div class="light-rays" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<header class="navbar" role="banner">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Shyam home">
+      <div class="navbar__logo-mark">S</div>
+      <span class="navbar__logo-text">Shyam</span>
+    </a>
+    <nav class="navbar__nav" role="navigation" aria-label="Primary navigation">
+      <a href="index.html" class="navbar__link" data-transition>🏠 Home</a>
+      <a href="index.html#about" class="navbar__link" data-transition>👤 About</a>
+      <a href="index.html#skills" class="navbar__link" data-transition>🧠 Skills</a>
+      <a href="projects.html" class="navbar__link active" aria-current="page">🚀 Projects</a>
+      <a href="certificates.html" class="navbar__link" data-transition>📜 Certificates</a>
+      <a href="experience.html" class="navbar__link" data-transition>💼 Experience</a>
+      <a href="gallery.html" class="navbar__link" data-transition>🖼️ Gallery</a>
+      <a href="contact.html" class="navbar__link" data-transition>📧 Contact</a>
+    </nav>
+    <div class="navbar__actions">
+      <button class="btn btn--ghost btn--icon" data-theme-toggle aria-label="Toggle theme">
+        <i class="fa-solid fa-sun theme-icon--light" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon theme-icon--dark hidden" aria-hidden="true"></i>
+      </button>
+      <a href="assets/resume/resume.png" target="_blank" rel="noopener" download="Shyam-Kishor-Sah-Resume.png" class="btn btn--resume">
+        <i class="fa-solid fa-download"></i> Resume
+      </a>
+      <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="navbar__mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="navbar__link">🏠 Home</a>
+    <a href="index.html#about" class="navbar__link">👤 About</a>
+    <a href="index.html#skills" class="navbar__link">🧠 Skills</a>
+    <a href="projects.html" class="navbar__link active">🚀 Projects</a>
+    <a href="certificates.html" class="navbar__link">📜 Certificates</a>
+    <a href="experience.html" class="navbar__link">💼 Experience</a>
+    <a href="gallery.html" class="navbar__link">🖼️ Gallery</a>
+    <a href="contact.html" class="navbar__link">📧 Contact</a>
+    <a href="assets/resume/resume.png" target="_blank" rel="noopener" class="btn btn--primary btn--sm" style="margin-top:8px">
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+  </nav>
+</header>
+
+<main id="page-wrapper" role="main">
+
+  <!-- Page Hero -->
+  <section class="section" style="padding-top:calc(var(--navbar-height) + var(--space-16));text-align:center" aria-label="Projects hero">
+    <div class="container">
+      <span class="eyebrow" data-aos="fade-up"><i class="fa-solid fa-rocket"></i> Portfolio</span>
+      <h1 class="section__title" data-aos="fade-up" data-aos-delay="100">
+        🚀 My <span class="text-gradient">Projects</span>
+      </h1>
+      <p class="section__subtitle" style="margin-inline:auto" data-aos="fade-up" data-aos-delay="200">
+        AI systems, full-stack applications, IoT automation, and research — all built end-to-end with passion.
+      </p>
+      <div class="divider" data-aos="fade-up" data-aos-delay="300"></div>
+
+      <!-- Stats row -->
+      <div class="proj-hero__stats" data-aos="fade-up" data-aos-delay="400">
+        <div class="card card--stat proj-hero__stat" data-tilt>
+          <span style="font-size:1.8rem">🚀</span>
+          <span class="card__stat-number" data-counter="4" data-counter-suffix="">4</span>
+          <span class="card__stat-label">Total Projects</span>
+        </div>
+        <div class="card card--stat proj-hero__stat" data-tilt>
+          <span style="font-size:1.8rem">🤖</span>
+          <span class="card__stat-number" data-counter="2" data-counter-suffix="">2</span>
+          <span class="card__stat-label">AI / ML Projects</span>
+        </div>
+        <div class="card card--stat proj-hero__stat" data-tilt>
+          <span style="font-size:1.8rem">💻</span>
+          <span class="card__stat-number" data-counter="1" data-counter-suffix="">1</span>
+          <span class="card__stat-label">Full Stack Apps</span>
+        </div>
+        <div class="card card--stat proj-hero__stat" data-tilt>
+          <span style="font-size:1.8rem">🔬</span>
+          <span class="card__stat-number" data-counter="2" data-counter-suffix="">2</span>
+          <span class="card__stat-label">Research Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="section" style="padding-top:0;padding-bottom:0" aria-label="Project filters">
+    <div class="container">
+      <div class="projects__filters" data-aos="fade-up">
+        <button class="btn btn--glow btn--sm projects__filter active" data-filter="all">⚡ All</button>
+        <button class="btn btn--ghost btn--sm projects__filter" data-filter="ai">🤖 AI / ML</button>
+        <button class="btn btn--ghost btn--sm projects__filter" data-filter="cv">📷 Computer Vision</button>
+        <button class="btn btn--ghost btn--sm projects__filter" data-filter="web">💻 Full Stack</button>
+        <button class="btn btn--ghost btn--sm projects__filter" data-filter="iot">🏠 IoT / Robotics</button>
+        <button class="btn btn--ghost btn--sm projects__filter" data-filter="research">🔬 Research</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section" style="padding-top:var(--space-10)" aria-label="Projects list">
+    <div class="container">
+      <div class="projects__grid" id="projects-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- ── Project 1: AI Healthcare Assistant ──────────── -->
+        <article class="card card--project proj-card" data-category="ai research" data-tilt>
+          <div class="card__image-wrap">
+            <img src="assets/images/projects/ai-healthcare.svg" alt="AI Healthcare Assistant for Rural Areas" loading="lazy"
+                 onerror="this.parentElement.innerHTML='<div class=\'proj-img-ph\'><span>🏥</span><p>AI Healthcare Assistant</p></div>'"/>
+            <div class="card__image-overlay">
+              <a href="#modal-healthcare" class="btn btn--primary btn--sm" data-modal-open="modal-healthcare"><i class="fa-solid fa-eye"></i> Details</a>
+              <a href="https://github.com/SKS-650/ai-healthcare-assistant" target="_blank" rel="noopener" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="contact.html#contact-form" class="btn btn--outline btn--sm"><i class="fa-solid fa-globe"></i> Request Demo</a>
+            </div>
+            <span class="proj-card__badge badge--ai">🤖 AI / ML</span>
+            <span class="proj-card__year">2024</span>
+          </div>
+          <div class="card__body">
+            <div class="tags">
+              <span class="tag tag--primary">Python</span>
+              <span class="tag tag--secondary">TensorFlow</span>
+              <span class="tag tag--accent">FastAPI</span>
+              <span class="tag">NLP</span>
+              <span class="tag">Flutter</span>
+            </div>
+            <h2 class="card__title">AI Healthcare Assistant for Rural Areas</h2>
+            <p class="card__desc">An intelligent healthcare assistant providing symptom analysis, disease prediction, and medical guidance for rural communities in Nepal lacking specialist access. Uses NLP models fine-tuned on medical datasets.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Symptom-to-diagnosis NLP pipeline</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Multi-language support (Nepali + English)</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Offline-capable mobile app (Flutter)</div>
+            </div>
+            <div class="card__footer">
+              <div class="tags"><span class="tag tag--success">Completed</span><span class="tag tag--primary">Research</span></div>
+              <button class="btn btn--outline btn--sm" data-modal-open="modal-healthcare">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 2: Face Disease Detection ──────────── -->
+        <article class="card card--project proj-card" data-category="ai cv research" data-tilt>
+          <div class="card__image-wrap">
+            <img src="assets/images/projects/face-disease.svg" alt="Face Disease Detection System" loading="lazy"
+                 onerror="this.parentElement.innerHTML='<div class=\'proj-img-ph\'><span>🔬</span><p>Face Disease Detection</p></div>'"/>
+            <div class="card__image-overlay">
+              <a href="#modal-facedisease" class="btn btn--primary btn--sm" data-modal-open="modal-facedisease"><i class="fa-solid fa-eye"></i> Details</a>
+              <a href="https://github.com/SKS-650/face-disease-detection" target="_blank" rel="noopener" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+            <span class="proj-card__badge badge--cv">📷 Computer Vision</span>
+            <span class="proj-card__year">2024</span>
+          </div>
+          <div class="card__body">
+            <div class="tags">
+              <span class="tag tag--primary">PyTorch</span>
+              <span class="tag tag--secondary">OpenCV</span>
+              <span class="tag tag--accent">CNN</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Medical AI</span>
+            </div>
+            <h2 class="card__title">Face Disease Detection System</h2>
+            <p class="card__desc">A deep learning computer vision system that detects and classifies facial skin diseases using CNNs. Trained on dermatological image datasets, achieving high accuracy for multiple condition categories.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Multi-class skin condition classification</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Custom CNN + transfer learning (ResNet)</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Real-time webcam inference</div>
+            </div>
+            <div class="card__footer">
+              <div class="tags"><span class="tag tag--success">Completed</span><span class="tag tag--accent">CV</span></div>
+              <button class="btn btn--outline btn--sm" data-modal-open="modal-facedisease">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 3: Smart Home ESP32 ────────────────── -->
+        <article class="card card--project proj-card" data-category="iot" data-tilt>
+          <div class="card__image-wrap">
+            <img src="assets/images/projects/smart-home.svg" alt="Smart Home Automation using ESP32" loading="lazy"
+                 onerror="this.parentElement.innerHTML='<div class=\'proj-img-ph\'><span>🏠</span><p>Smart Home Automation</p></div>'"/>
+            <div class="card__image-overlay">
+              <a href="#modal-smarthome" class="btn btn--primary btn--sm" data-modal-open="modal-smarthome"><i class="fa-solid fa-eye"></i> Details</a>
+              <a href="https://github.com/SKS-650/smart-home-esp32" target="_blank" rel="noopener" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+            <span class="proj-card__badge badge--iot">🤖 IoT / Robotics</span>
+            <span class="proj-card__year">2023</span>
+          </div>
+          <div class="card__body">
+            <div class="tags">
+              <span class="tag tag--primary">ESP32</span>
+              <span class="tag tag--secondary">C++</span>
+              <span class="tag tag--accent">Firebase</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">IoT</span>
+            </div>
+            <h2 class="card__title">Smart Home Automation using ESP32</h2>
+            <p class="card__desc">A complete smart home system built on ESP32 microcontrollers with real-time device control via Flutter mobile app, voice commands, PIR sensor automation, and Firebase cloud synchronization.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Real-time control via Flutter app</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> PIR motion &amp; temperature sensors</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Firebase Realtime Database sync</div>
+            </div>
+            <div class="card__footer">
+              <div class="tags"><span class="tag tag--success">Completed</span><span class="tag tag--warning">IoT</span></div>
+              <button class="btn btn--outline btn--sm" data-modal-open="modal-smarthome">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── Project 4: Student Management System ───────── -->
+        <article class="card card--project proj-card" data-category="web" data-tilt>
+          <div class="card__image-wrap">
+            <img src="assets/images/projects/student-mgmt.svg" alt="Student Management System" loading="lazy"
+                 onerror="this.parentElement.innerHTML='<div class=\'proj-img-ph\'><span>🎓</span><p>Student Management System</p></div>'"/>
+            <div class="card__image-overlay">
+              <a href="#modal-studentmgmt" class="btn btn--primary btn--sm" data-modal-open="modal-studentmgmt"><i class="fa-solid fa-eye"></i> Details</a>
+              <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--outline btn--sm"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+            <span class="proj-card__badge badge--web">💻 Full Stack</span>
+            <span class="proj-card__year">2023</span>
+          </div>
+          <div class="card__body">
+            <div class="tags">
+              <span class="tag tag--primary">Python</span>
+              <span class="tag tag--secondary">FastAPI</span>
+              <span class="tag tag--accent">PostgreSQL</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">REST API</span>
+            </div>
+            <h2 class="card__title">Student Management System</h2>
+            <p class="card__desc">A full-featured student management platform with attendance tracking, grade management, exam scheduling, report generation, and a Flutter mobile app. FastAPI backend with PostgreSQL database.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Attendance &amp; grade management</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> PDF report generation</div>
+              <div class="proj-card__highlight"><i class="fa-solid fa-check-circle"></i> Cross-platform Flutter mobile app</div>
+            </div>
+            <div class="card__footer">
+              <div class="tags"><span class="tag tag--success">Completed</span><span class="tag tag--accent">Full Stack</span></div>
+              <button class="btn btn--outline btn--sm" data-modal-open="modal-studentmgmt">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects__grid -->
+
+      <!-- More Projects Coming Soon -->
+      <div class="proj-more card card--glass" data-aos="fade-up" style="margin-top:var(--space-10);text-align:center;padding:var(--space-10)">
+        <span style="font-size:3rem">🔨</span>
+        <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-top:var(--space-4)">More Projects <span class="text-gradient">Coming Soon</span></h3>
+        <p style="color:var(--text-muted);font-size:var(--fs-sm);margin-top:var(--space-3);max-width:50ch;margin-inline:auto">
+          I'm constantly building new things. Follow my GitHub for the latest projects and experiments.
+        </p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;margin-top:var(--space-6)">
+        <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--primary btn--lg magnetic">
+            <i class="fa-brands fa-github"></i> View GitHub
+          </a>
+          <a href="contact.html" class="btn btn--outline btn--lg" data-transition>
+            <i class="fa-solid fa-paper-plane"></i> Collaborate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECT DETAIL MODALS ────────────────────────────── -->
+
+  <!-- Modal: AI Healthcare -->
+  <div class="modal-backdrop" id="modal-healthcare" role="dialog" aria-modal="true" aria-label="AI Healthcare Assistant details">
+    <div class="modal">
+      <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__header">
+        <span class="eyebrow"><i class="fa-solid fa-hospital"></i> AI / ML · Research</span>
+        <h2 style="font-size:var(--fs-2xl);font-weight:var(--fw-bold);margin-top:var(--space-2)">🏥 AI Healthcare Assistant for Rural Areas</h2>
+      </div>
+      <div class="modal__body">
+        <div class="modal__section"><h3 class="modal__section-title">📋 Overview</h3>
+          <p class="modal__text">An intelligent healthcare assistant designed specifically for rural communities in Nepal and similar developing regions lacking specialist medical access. The system provides symptom analysis, preliminary disease prediction, and evidence-based medical guidance via a mobile app that works in low-bandwidth environments.</p>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">🔥 Problem Statement</h3>
+          <p class="modal__text">Millions of people in rural Nepal have no access to doctors or specialists. Basic healthcare decisions are often delayed or wrong due to lack of information. This project aims to bridge that critical gap using AI.</p>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">⚡ Key Features</h3>
+          <ul class="modal__list">
+            <li>Symptom-to-diagnosis NLP pipeline with medical knowledge base</li>
+            <li>Multi-language support (Nepali and English)</li>
+            <li>Offline-capable Flutter mobile app for low-connectivity areas</li>
+            <li>Disease risk assessment with confidence scores</li>
+            <li>Emergency escalation alerts with nearest health facility suggestions</li>
+            <li>FastAPI backend with TensorFlow NLP models</li>
+          </ul>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">🛠️ Tech Stack</h3>
+          <div class="tags">
+            <span class="tag tag--primary">Python</span><span class="tag tag--secondary">TensorFlow</span>
+            <span class="tag tag--accent">FastAPI</span><span class="tag">NLP</span>
+            <span class="tag">Flutter</span><span class="tag">PostgreSQL</span>
+            <span class="tag">Transformers</span><span class="tag">Dart</span>
+          </div>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">📸 Screenshots</h3>
+          <div class="modal__gallery">
+            <div class="modal__gallery-item"><div class="proj-img-ph" style="height:140px"><span>📱</span><p>Mobile App UI</p></div></div>
+            <div class="modal__gallery-item"><div class="proj-img-ph" style="height:140px"><span>📊</span><p>Dashboard</p></div></div>
+            <div class="modal__gallery-item"><div class="proj-img-ph" style="height:140px"><span>🔬</span><p>Analysis Screen</p></div></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6)">
+          <a href="https://github.com/SKS-650/ai-healthcare-assistant" target="_blank" rel="noopener" class="btn btn--primary btn--lg magnetic"><i class="fa-brands fa-github"></i> View Code</a>
+          <a href="contact.html#contact-form" class="btn btn--outline btn--lg"><i class="fa-solid fa-globe"></i> Request Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Face Disease Detection -->
+  <div class="modal-backdrop" id="modal-facedisease" role="dialog" aria-modal="true" aria-label="Face Disease Detection details">
+    <div class="modal">
+      <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__header">
+        <span class="eyebrow"><i class="fa-solid fa-eye"></i> Computer Vision · Medical AI</span>
+        <h2 style="font-size:var(--fs-2xl);font-weight:var(--fw-bold);margin-top:var(--space-2)">🔬 Face Disease Detection System</h2>
+      </div>
+      <div class="modal__body">
+        <div class="modal__section"><h3 class="modal__section-title">📋 Overview</h3>
+          <p class="modal__text">A deep learning computer vision system that detects and classifies facial skin diseases and conditions. Built with PyTorch and fine-tuned ResNet architectures on dermatological image datasets, the system provides real-time analysis via webcam or image upload.</p>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">⚡ Key Features</h3>
+          <ul class="modal__list">
+            <li>Multi-class skin condition classification (10+ categories)</li>
+            <li>Custom CNN + transfer learning with ResNet-50</li>
+            <li>Real-time webcam inference at 30+ FPS</li>
+            <li>Confidence score visualization with Grad-CAM heatmaps</li>
+            <li>Dataset augmentation pipeline for improved generalization</li>
+            <li>REST API for mobile/web integration</li>
+          </ul>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">🏗️ Architecture</h3>
+          <p class="modal__text">Input image → preprocessing pipeline → ResNet-50 backbone (fine-tuned) → custom classification head → softmax output with confidence scores. Grad-CAM used for explainability.</p>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">🛠️ Tech Stack</h3>
+          <div class="tags">
+            <span class="tag tag--primary">PyTorch</span><span class="tag tag--secondary">OpenCV</span>
+            <span class="tag tag--accent">CNN</span><span class="tag">ResNet</span>
+            <span class="tag">Scikit-learn</span><span class="tag">FastAPI</span><span class="tag">NumPy</span>
+          </div>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">📸 Screenshots</h3>
+          <div class="modal__gallery">
+            <div class="modal__gallery-item"><div class="proj-img-ph" style="height:140px"><span>📷</span><p>Detection UI</p></div></div>
+            <div class="modal__gallery-item"><div class="proj-img-ph" style="height:140px"><span>🗺️</span><p>Grad-CAM Heatmap</p></div></div>
+            <div class="modal__gallery-item"><div class="proj-img-ph" style="height:140px"><span>📊</span><p>Model Accuracy</p></div></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6)">
+          <a href="https://github.com/SKS-650/face-disease-detection" target="_blank" rel="noopener" class="btn btn--primary btn--lg magnetic"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Smart Home -->
+  <div class="modal-backdrop" id="modal-smarthome" role="dialog" aria-modal="true" aria-label="Smart Home Automation details">
+    <div class="modal">
+      <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal__header">
+        <span class="eyebrow"><i class="fa-solid fa-house-signal"></i> IoT · Robotics · Embedded</span>
+        <h2 style="font-size:var(--fs-2xl);font-weight:var(--fw-bold);margin-top:var(--space-2)">🏠 Smart Home Automation using ESP32</h2>
+      </div>
+      <div class="modal__body">
+        <div class="modal__section"><h3 class="modal__section-title">📋 Overview</h3>
+          <p class="modal__text">A complete smart home automation system built around ESP32 microcontrollers with real-time cloud synchronization using Firebase, a Flutter mobile control app, and multiple sensor integrations for intelligent automation.</p>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">⚡ Key Features</h3>
+          <ul class="modal__list">
+            <li>Real-time device control via Flutter mobile app</li>
+            <li>PIR motion detection for automatic lighting</li>
+            <li>DHT22 temperature &amp; humidity monitoring</li>
+            <li>Firebase Realtime Database for instant sync</li>
+            <li>Scheduled automation rules engine</li>
+            <li>Power consumption monitoring dashboard</li>
+          </ul>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">🛠️ Tech Stack</h3>
+          <div class="tags">
+            <span class="tag tag--primary">ESP32</span><span class="tag tag--secondary">C++</span>
+            <span class="tag tag--accent">Firebase</span><span class="tag">Flutter</span>
+            <span class="tag">Dart</span><span class="tag">MQTT</span><span class="tag">Arduino IDE</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6)">
+          <a href="https://github.com/SKS-650/smart-home-esp32" target="_blank" rel="noopener" class="btn btn--primary btn--lg magnetic"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Student Management -->
+  <div class="modal-backdrop" id="modal-studentmgmt" role="dialog" aria-modal="true" aria-label="Student Management System details">
+    <div class="modal">
+      <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-graduation-cap"></i></button>
+      <div class="modal__header">
+        <span class="eyebrow"><i class="fa-solid fa-graduation-cap"></i> Full Stack · Web · Mobile</span>
+        <h2 style="font-size:var(--fs-2xl);font-weight:var(--fw-bold);margin-top:var(--space-2)">🎓 Student Management System</h2>
+      </div>
+      <div class="modal__body">
+        <div class="modal__section"><h3 class="modal__section-title">📋 Overview</h3>
+          <p class="modal__text">A full-featured student management platform for educational institutions. Handles student registration, attendance tracking, grade management, exam scheduling, and generates detailed PDF reports. Includes a cross-platform Flutter mobile app.</p>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">⚡ Key Features</h3>
+          <ul class="modal__list">
+            <li>Student registration &amp; profile management</li>
+            <li>Daily attendance tracking with analytics</li>
+            <li>Grade entry, calculation, and GPA management</li>
+            <li>Exam scheduling and result publication</li>
+            <li>Automated PDF report generation</li>
+            <li>Admin dashboard with charts &amp; insights</li>
+            <li>Cross-platform Flutter mobile app (iOS &amp; Android)</li>
+          </ul>
+        </div>
+        <div class="modal__section"><h3 class="modal__section-title">🛠️ Tech Stack</h3>
+          <div class="tags">
+            <span class="tag tag--primary">Python</span><span class="tag tag--secondary">FastAPI</span>
+            <span class="tag tag--accent">PostgreSQL</span><span class="tag">Flutter</span>
+            <span class="tag">Dart</span><span class="tag">SQLAlchemy</span><span class="tag">JWT Auth</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6)">
+          <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--primary btn--lg magnetic"><i class="fa-brands fa-github"></i> View Code</a>
+          <a href="contact.html#contact-form" class="btn btn--outline btn--lg"><i class="fa-solid fa-globe"></i> Request Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="gradient-line" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo"><div class="navbar__logo-mark">S</div><span class="navbar__logo-text">Shyam</span></a>
+        <p class="footer__brand-desc">Full Stack Developer &amp; AI/ML Enthusiast from Nepal 🇳🇵. NCIT, Pokhara University.</p>
+        <div class="footer__social">
+          <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shyamkishorsah789/" target="_blank" rel="noopener" class="btn btn--social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@ShyamKishorSah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/shyamkishorsah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ShyamKishorSah650" target="_blank" rel="noopener" class="btn btn--social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer__col"><h3 class="footer__col-title">Navigate</h3><ul class="footer__links">
+        <li><a href="index.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Home</a></li>
+        <li><a href="projects.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Projects</a></li>
+        <li><a href="certificates.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Certificates</a></li>
+        <li><a href="experience.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Experience</a></li>
+      </ul></div>
+      <div class="footer__col"><h3 class="footer__col-title">More</h3><ul class="footer__links">
+        <li><a href="gallery.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Gallery</a></li>
+        <li><a href="contact.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Contact</a></li>
+        <li><a href="assets/resume/resume.png" target="_blank" rel="noopener" class="footer__link"><i class="fa-solid fa-file-pdf fa-xs"></i>Resume</a></li>
+      </ul></div>
+      <div class="footer__col"><h3 class="footer__col-title">📧 Contact</h3><ul class="footer__links">
+        <li><a href="mailto:shyamkishrsah@gmail.com" class="footer__link"><i class="fa-solid fa-envelope fa-xs"></i>shyamkishrsah@gmail.com</a></li>
+        <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-location-dot fa-xs"></i>Balkumari, Lalitpur, Nepal 🇳🇵</span></li>
+        <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-circle fa-xs" style="color:var(--color-success)"></i>Available for opportunities</span></li>
+      </ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; <span id="footer-year">2025</span> Shyam Kishor Sah. Crafted with <span style="color:var(--color-danger)">❤️</span> in Nepal 🇳🇵</p>
+      <a href="#" class="footer__back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/three-bg.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // Filter logic
+  const filters = document.querySelectorAll('.projects__filter');
+  const cards   = document.querySelectorAll('.proj-card');
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => { b.classList.remove('active','btn--glow'); b.classList.add('btn--ghost'); });
+      btn.classList.add('active','btn--glow'); btn.classList.remove('btn--ghost');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const cats = card.dataset.category || '';
+        const show = filter === 'all' || cats.includes(filter);
+        card.style.display = show ? '' : 'none';
+        if (show) card.style.animation = 'fadeInUp 0.4s ease both';
+      });
+    });
+  });
+</script>
+
+<style>
+  .proj-hero__stats { display:flex; gap:var(--space-6); justify-content:center; margin-top:var(--space-10); flex-wrap:wrap; }
+  .proj-hero__stat { min-width:150px; flex:1; max-width:180px; }
+  .projects__filters { display:flex; flex-wrap:wrap; gap:var(--space-3); justify-content:center; padding-block:var(--space-8); }
+  .projects__grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-8); }
+  .proj-card__badge { position:absolute; top:var(--space-3); left:var(--space-3); padding:4px 12px; font-size:var(--fs-2xs); font-weight:var(--fw-bold); border-radius:var(--border-radius-full); color:#fff; letter-spacing:var(--ls-wide); }
+  .badge--ai { background:linear-gradient(135deg,var(--color-primary),var(--color-secondary)); }
+  .badge--cv { background:linear-gradient(135deg,var(--color-secondary),var(--color-accent)); }
+  .badge--iot { background:linear-gradient(135deg,var(--color-accent),var(--color-primary)); }
+  .badge--web { background:linear-gradient(135deg,var(--color-primary),var(--color-accent)); }
+  .proj-card__year { position:absolute; top:var(--space-3); right:var(--space-3); padding:4px 10px; font-size:var(--fs-2xs); font-weight:var(--fw-semibold); border-radius:var(--border-radius-full); background:var(--glass-bg-strong); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); color:var(--text-secondary); }
+  .proj-card__highlights { display:flex; flex-direction:column; gap:var(--space-2); margin-top:var(--space-3); }
+  .proj-card__highlight { display:flex; align-items:center; gap:var(--space-2); font-size:var(--fs-xs); color:var(--text-muted); }
+  .proj-card__highlight i { color:var(--color-success); flex-shrink:0; }
+  .proj-img-ph { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:var(--space-3); background:var(--bg-elevated); font-size:var(--fs-xs); color:var(--text-faint); font-weight:var(--fw-medium); }
+  .proj-img-ph span { font-size:3rem; }
+  .modal__header { margin-bottom:var(--space-6); }
+  .modal__body { display:flex; flex-direction:column; gap:var(--space-6); }
+  .modal__section { display:flex; flex-direction:column; gap:var(--space-3); }
+  .modal__section-title { font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); }
+  .modal__text { font-size:var(--fs-sm); color:var(--text-muted); line-height:var(--lh-relaxed); }
+  .modal__list { list-style:none; display:flex; flex-direction:column; gap:var(--space-2); }
+  .modal__list li { font-size:var(--fs-sm); color:var(--text-muted); display:flex; align-items:flex-start; gap:var(--space-2); }
+  .modal__list li::before { content:'→'; color:var(--color-primary); flex-shrink:0; margin-top:1px; }
+  .modal__gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-3); }
+  .modal__gallery-item { border-radius:var(--border-radius-md); overflow:hidden; border:1px solid var(--border-subtle); }
+  @media(max-width:768px) { .projects__grid { grid-template-columns:1fr; } .modal__gallery { grid-template-columns:1fr; } }
+</style>
+</body>
+</html>

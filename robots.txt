@@ -1,0 +1,12 @@
+# robots.txt — Shyam Portfolio
+# https://yourportfolio.com
+
+User-agent: *
+Allow: /
+
+# Block asset internals from indexing
+Disallow: /assets/resume/
+Disallow: /assets/fonts/
+
+# Sitemap location
+Sitemap: https://yourportfolio.com/sitemap.xml

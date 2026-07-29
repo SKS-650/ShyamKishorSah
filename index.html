@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Shyam Kishor Sah | Full Stack Developer & AI/ML Enthusiast</title>
+  <meta name="description" content="Portfolio of Shyam Kishor Sah — Full Stack Developer and AI/ML Enthusiast from Nepal. Final year BE Computer Engineering student at NCIT, Pokhara University." />
+  <meta name="keywords" content="Shyam Kishor Sah, Full Stack Developer, AI ML Enthusiast, Computer Vision, Robotics, Nepal, NCIT, Portfolio" />
+  <meta name="author" content="Shyam Kishor Sah" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourportfolio.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourportfolio.com/" />
+  <meta property="og:title" content="Shyam Kishor Sah | Full Stack Developer & AI/ML Enthusiast" />
+  <meta property="og:description" content="Building intelligent systems and beautiful products from Nepal." />
+  <meta property="og:image" content="assets/images/profile/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shyam Kishor Sah | Full Stack Developer & AI/ML Enthusiast" />
+  <meta name="twitter:description" content="Building intelligent systems and beautiful products from Nepal." />
+  <meta name="twitter:image" content="assets/images/profile/og-image.svg" />
+  <link rel="icon" href="assets/images/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <script>(function(){const t=localStorage.getItem('portfolio-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()</script>
+</head>
+<body class="loading">
+
+<!-- Page Loader -->
+<div id="page-loader" aria-hidden="true">
+  <div class="loader__logo">S.</div>
+  <div class="loader__bar"><div class="loader__progress"></div></div>
+  <span class="loader__text">Initializing</span>
+</div>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- Background Layers -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
+<div class="bg-blobs" aria-hidden="true">
+  <div class="bg-blob bg-blob--1"></div>
+  <div class="bg-blob bg-blob--2"></div>
+  <div class="bg-blob bg-blob--3"></div>
+</div>
+<div class="light-rays" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" role="banner">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Shyam — Home">
+      <div class="navbar__logo-mark" aria-hidden="true">S</div>
+      <span class="navbar__logo-text">Shyam</span>
+    </a>
+    <nav class="navbar__nav" role="navigation" aria-label="Primary navigation">
+      <a href="index.html" class="navbar__link active" aria-current="page" data-transition>🏠 Home</a>
+      <a href="index.html#about" class="navbar__link" data-transition>👤 About</a>
+      <a href="index.html#skills" class="navbar__link" data-transition>🧠 Skills</a>
+      <a href="projects.html" class="navbar__link" data-transition>🚀 Projects</a>
+      <a href="certificates.html" class="navbar__link" data-transition>📜 Certificates</a>
+      <a href="experience.html" class="navbar__link" data-transition>💼 Experience</a>
+      <a href="gallery.html" class="navbar__link" data-transition>🖼️ Gallery</a>
+      <a href="contact.html" class="navbar__link" data-transition>📧 Contact</a>
+    </nav>
+    <div class="navbar__actions">
+      <button class="btn btn--ghost btn--icon" data-theme-toggle aria-label="Switch to light mode" title="Toggle theme">
+        <i class="fa-solid fa-sun theme-icon--light" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon theme-icon--dark hidden" aria-hidden="true"></i>
+      </button>
+      <a href="assets/resume/resume.png" target="_blank" rel="noopener noreferrer" download="Shyam-Kishor-Sah-Resume.png" class="btn btn--resume" aria-label="Download Resume">
+        <i class="fa-solid fa-download" aria-hidden="true"></i> Resume
+      </a>
+      <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="navbar__mobile" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="navbar__link active">🏠 Home</a>
+    <a href="index.html#about" class="navbar__link">👤 About</a>
+    <a href="index.html#skills" class="navbar__link">🧠 Skills</a>
+    <a href="projects.html" class="navbar__link">🚀 Projects</a>
+    <a href="certificates.html" class="navbar__link">📜 Certificates</a>
+    <a href="experience.html" class="navbar__link">💼 Experience</a>
+    <a href="gallery.html" class="navbar__link">🖼️ Gallery</a>
+    <a href="contact.html" class="navbar__link">📧 Contact</a>
+    <a href="assets/resume/resume.png" target="_blank" rel="noopener" class="btn btn--primary btn--sm" style="margin-top:8px">
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+  </nav>
+</header>
+
+<main id="page-wrapper" role="main">
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  HERO SECTION                                     -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="hero section" id="home" aria-label="Hero">
+  <div class="container">
+    <div class="hero__layout">
+
+      <!-- Left: Text Content -->
+      <div class="hero__content">
+        <div class="hero__eyebrow eyebrow">
+          <span class="animate-wave">👋</span>
+          <span>Hello from Nepal — I'm available for opportunities</span>
+          <span class="status-dot"></span>
+        </div>
+
+        <h1 class="hero__heading">
+          <span class="hero__heading-line">Shyam</span>
+          <span class="hero__heading-line text-gradient">Kishor Sah</span>
+        </h1>
+
+        <div class="hero__typed-wrap" aria-live="polite">
+          <span class="hero__typed-prefix">I am a </span>
+          <span id="hero-typed" class="text-gradient"></span>
+        </div>
+
+        <p class="hero__desc">
+          Final year BE Computer Engineering student at <strong>NCIT, Pokhara University</strong>.
+          Passionate about building intelligent systems — from deep learning models to
+          full-stack web apps. Exploring AI, Computer Vision, Robotics, and Smart Healthcare.
+        </p>
+
+        <div class="hero__cta">
+          <a href="assets/resume/resume.png" target="_blank" rel="noopener" class="btn btn--gradient btn--lg magnetic">
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download Resume
+          </a>
+          <a href="projects.html" class="btn btn--primary btn--lg magnetic" data-transition>
+            <i class="fa-solid fa-rocket" aria-hidden="true"></i> View Projects
+          </a>
+          <a href="contact.html" class="btn btn--outline btn--lg" data-transition>
+            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Me
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="hero__social" aria-label="Social links">
+          <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--social" aria-label="GitHub" data-tooltip="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shyamkishorsah789/" target="_blank" rel="noopener" class="btn btn--social" aria-label="LinkedIn" data-tooltip="LinkedIn">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/@ShyamKishorSah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="YouTube" data-tooltip="YouTube">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/shyamkishorsah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="Instagram" data-tooltip="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.facebook.com/ShyamKishorSah650" target="_blank" rel="noopener" class="btn btn--social" aria-label="Facebook" data-tooltip="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number text-gradient" data-counter="4" data-counter-suffix="">4</span>
+            <span class="hero__stat-label">Projects</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number text-gradient" data-counter="7" data-counter-suffix="">7</span>
+            <span class="hero__stat-label">Certificates</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number text-gradient" data-counter="17" data-counter-suffix="">17</span>
+            <span class="hero__stat-label">Technologies</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number text-gradient" data-counter="3" data-counter-suffix="">3</span>
+            <span class="hero__stat-label">Research Areas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Visual -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__avatar-ring">
+          <div class="hero__avatar-glow"></div>
+          <div class="avatar avatar--2xl avatar--ring hero__avatar">
+            <img src="assets/images/profile/profile.png" alt="Shyam Kishor Sah — Profile Photo"
+                 width="200" height="200"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <span style="display:none;font-size:4rem">🤖</span>
+          </div>
+          <div class="hero__orbit hero__orbit--1"><div class="hero__orbit-dot" style="background:var(--color-primary)"></div></div>
+          <div class="hero__orbit hero__orbit--2"><div class="hero__orbit-dot" style="background:var(--color-secondary)"></div></div>
+          <div class="hero__orbit hero__orbit--3"><div class="hero__orbit-dot" style="background:var(--color-accent)"></div></div>
+        </div>
+        <div class="hero__badge hero__badge--tl"><span>🐍</span><span>Python</span></div>
+        <div class="hero__badge hero__badge--tr"><span>🤖</span><span>AI / ML</span></div>
+        <div class="hero__badge hero__badge--bl"><span>📷</span><span>Computer Vision</span></div>
+        <div class="hero__badge hero__badge--br"><span>🤖</span><span>Robotics</span></div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" aria-label="Scroll down">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <style>
+    .hero { padding-top: calc(var(--navbar-height) + var(--space-16)); min-height: 100vh; display: flex; align-items: center; }
+    .hero__layout { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center; }
+    .hero__content { display: flex; flex-direction: column; gap: var(--space-5); }
+    .hero__heading { font-size: var(--fs-6xl); font-weight: var(--fw-black); line-height: 1.05; letter-spacing: var(--ls-tight); }
+    .hero__heading-line { display: block; }
+    .hero__typed-wrap { font-size: var(--fs-2xl); font-weight: var(--fw-semibold); font-family: var(--font-heading); min-height: 1.4em; }
+    .hero__typed-prefix { color: var(--text-muted); }
+    .hero__desc { font-size: var(--fs-lg); color: var(--text-muted); max-width: 52ch; line-height: var(--lh-relaxed); }
+    .hero__desc strong { color: var(--color-primary-light); font-weight: var(--fw-semibold); }
+    .hero__cta { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+    .hero__social { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+    .hero__stats { display: flex; align-items: center; gap: var(--space-5); padding-top: var(--space-2); flex-wrap: wrap; }
+    .hero__stat { display: flex; flex-direction: column; gap: 2px; }
+    .hero__stat-number { font-family: var(--font-heading); font-size: var(--fs-2xl); font-weight: var(--fw-black); line-height: 1; }
+    .hero__stat-label { font-size: var(--fs-2xs); color: var(--text-faint); letter-spacing: var(--ls-wide); text-transform: uppercase; }
+    .hero__stat-divider { width: 1px; height: 36px; background: var(--border-default); }
+    .hero__visual { position: relative; display: flex; align-items: center; justify-content: center; }
+    .hero__avatar-ring { position: relative; width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; }
+    .hero__avatar-glow { position: absolute; inset: -30px; border-radius: 50%; background: radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%); animation: glowPulse 3s ease-in-out infinite; }
+    .hero__avatar { width: 220px !important; height: 220px !important; font-size: var(--fs-4xl) !important; border: 3px solid var(--bg-base); box-shadow: 0 0 0 3px var(--color-primary), var(--shadow-glow-primary), var(--shadow-xl); animation: floatSlow 6s ease-in-out infinite; z-index: 2; }
+    .hero__avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    .hero__orbit { position: absolute; border-radius: 50%; border: 1px dashed; pointer-events: none; }
+    .hero__orbit--1 { width: 260px; height: 260px; border-color: rgba(37,99,235,0.25); animation: spin 14s linear infinite; }
+    .hero__orbit--2 { width: 320px; height: 320px; border-color: rgba(124,58,237,0.18); animation: spin 20s linear infinite reverse; }
+    .hero__orbit--3 { width: 380px; height: 380px; border-color: rgba(6,182,212,0.12); animation: spin 28s linear infinite; }
+    .hero__orbit-dot { width: 10px; height: 10px; border-radius: 50%; position: absolute; top: -5px; left: 50%; transform: translateX(-50%); box-shadow: 0 0 12px currentColor; }
+    .hero__badge { position: absolute; display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-4); background: var(--glass-bg-strong); backdrop-filter: var(--glass-blur); border: 1px solid var(--glass-border); border-radius: var(--border-radius-full); font-size: var(--fs-xs); font-weight: var(--fw-semibold); color: var(--text-secondary); white-space: nowrap; animation: float 4s ease-in-out infinite; box-shadow: var(--shadow-md); }
+    .hero__badge--tl { top: 10%; left: -10%; animation-delay: 0s; }
+    .hero__badge--tr { top: 10%; right: -10%; animation-delay: 1s; }
+    .hero__badge--bl { bottom: 14%; left: -10%; animation-delay: 2s; }
+    .hero__badge--br { bottom: 14%; right: -10%; animation-delay: 0.5s; }
+    .hero__scroll { position: absolute; bottom: var(--space-8); left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+    .hero__scroll-text { font-size: var(--fs-2xs); color: var(--text-faint); letter-spacing: var(--ls-widest); text-transform: uppercase; }
+    .hero__scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--color-primary), transparent); animation: float 2s ease-in-out infinite; }
+    @media (max-width: 1024px) { .hero__layout { grid-template-columns: 1fr; text-align: center; } .hero__visual { display: none; } .hero__content { align-items: center; } .hero__desc { text-align: center; } .hero__stats { justify-content: center; } .hero__social { justify-content: center; } .hero__cta { justify-content: center; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  ABOUT SECTION                                    -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="about" aria-label="About me">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-user" aria-hidden="true"></i> About Me</span>
+      <h2 class="section__title">Who I Am <span class="text-gradient">& What I Do</span></h2>
+      <p class="section__subtitle">A passionate developer and researcher from Nepal, building the future one line of code at a time.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="about__grid">
+      <!-- Bio Card -->
+      <div class="card card--glass about__bio" data-aos="fade-right">
+        <div class="about__bio-header">
+          <div class="avatar avatar--lg" style="background:var(--gradient-primary);font-size:2rem;flex-shrink:0">
+            <img src="assets/images/profile/profile.png" alt="Shyam" width="80" height="80"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='🤖'"/>
+          </div>
+          <div>
+            <h3 class="about__name">Shyam Kishor Sah</h3>
+            <p class="about__title-text text-gradient">Full Stack Developer &amp; AI/ML Enthusiast</p>
+            <p style="font-size:var(--fs-xs);color:var(--text-faint);margin-top:4px"><i class="fa-solid fa-location-dot"></i> Balkumari, Lalitpur, Nepal 🇳🇵</p>
+          </div>
+        </div>
+
+        <p style="color:var(--text-muted);line-height:var(--lh-relaxed);margin-top:var(--space-5);font-size:var(--fs-sm)">
+          Hey! I'm <strong style="color:var(--text-primary)">Shyam</strong> — a final-year BE Computer Engineering student at
+          <strong style="color:var(--color-primary-light)">Nepal College of Information Technology (NCIT)</strong>, Pokhara University.
+          My journey into programming started with curiosity about how computers "think," and quickly evolved into a deep
+          passion for Artificial Intelligence and its real-world applications.
+        </p>
+        <p style="color:var(--text-muted);line-height:var(--lh-relaxed);margin-top:var(--space-4);font-size:var(--fs-sm)">
+          I love building things that matter — whether it's a full-stack web application, a computer vision system,
+          or an AI-powered healthcare tool for rural communities. I believe technology should be <em style="color:var(--color-accent-light)">accessible, impactful,
+          and elegant</em>. Problem-solving is my superpower, and I approach every challenge with curiosity and determination.
+        </p>
+        <p style="color:var(--text-muted);line-height:var(--lh-relaxed);margin-top:var(--space-4);font-size:var(--fs-sm)">
+          Beyond coding, I'm deeply interested in robotics, edge computing, and how AI can transform healthcare in
+          developing nations. My goal is to contribute to research that bridges the gap between cutting-edge AI and
+          communities that need it most.
+        </p>
+
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-6);flex-wrap:wrap">
+          <span class="tag tag--primary"><i class="fa-solid fa-location-dot"></i> Lalitpur, Nepal</span>
+          <span class="tag tag--accent"><i class="fa-solid fa-graduation-cap"></i> BE Computer Engineering (2023 – Present)</span>
+          <span class="tag tag--success"><i class="fa-solid fa-circle-check"></i> Open to Opportunities</span>
+          <span class="tag tag--secondary"><i class="fa-solid fa-flask"></i> AI Researcher</span>
+        </div>
+
+        <div style="display:flex;gap:var(--space-3);margin-top:var(--space-5)">
+          <a href="contact.html" class="btn btn--primary btn--sm" data-transition>
+            <i class="fa-solid fa-paper-plane"></i> Hire Me
+          </a>
+          <a href="assets/resume/resume.png" target="_blank" rel="noopener" class="btn btn--outline btn--sm">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Stats + Info -->
+      <div class="about__right" data-aos="fade-left" data-aos-delay="100">
+        <div class="grid-2 about__stats">
+          <div class="card card--stat" data-tilt>
+            <span style="font-size:2rem">🚀</span>
+            <span class="card__stat-number" data-counter="4" data-counter-suffix="">4</span>
+            <span class="card__stat-label">Projects Built</span>
+          </div>
+          <div class="card card--stat" data-tilt>
+            <span style="font-size:2rem">📜</span>
+            <span class="card__stat-number" data-counter="7" data-counter-suffix="">7</span>
+            <span class="card__stat-label">Certificates</span>
+          </div>
+          <div class="card card--stat" data-tilt>
+            <span style="font-size:2rem">🔬</span>
+            <span class="card__stat-number" data-counter="3" data-counter-suffix="">3</span>
+            <span class="card__stat-label">Research Areas</span>
+          </div>
+          <div class="card card--stat" data-tilt>
+            <span style="font-size:2rem">☕</span>
+            <span class="card__stat-number" data-counter="5" data-counter-suffix="">5</span>
+            <span class="card__stat-label">Project Categories</span>
+          </div>
+        </div>
+
+        <!-- Quick Info List -->
+        <div class="card card--glass about__info-list" style="margin-top:var(--space-6)" data-aos="fade-up" data-aos-delay="150">
+          <h4 style="font-size:var(--fs-base);font-weight:var(--fw-semibold);margin-bottom:var(--space-4);color:var(--text-primary)">Quick Facts</h4>
+          <div class="about__info-item"><i class="fa-solid fa-university"></i><span><strong>NCIT</strong> — Nepal College of Information Technology</span></div>
+          <div class="about__info-item"><i class="fa-solid fa-book-open"></i><span>BE Computer Engineering, Pokhara University</span></div>
+          <div class="about__info-item"><i class="fa-solid fa-brain"></i><span>AI/ML · Deep Learning · Computer Vision · Robotics</span></div>
+          <div class="about__info-item"><i class="fa-solid fa-code"></i><span>Python · Java · JavaScript · C · C++ · Dart</span></div>
+          <div class="about__info-item"><i class="fa-solid fa-globe"></i><span>Building impactful AI solutions for real-world problems</span></div>
+          <div class="about__info-item"><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:shyamkishrsah@gmail.com" style="color:var(--color-primary-light)">shyamkishrsah@gmail.com</a>
+          </div>
+        </div>
+
+        <!-- Journey Timeline Mini -->
+        <div class="card card--glass" style="margin-top:var(--space-6);padding:var(--space-6)" data-aos="fade-up" data-aos-delay="200">
+          <h4 style="font-size:var(--fs-base);font-weight:var(--fw-semibold);margin-bottom:var(--space-5);color:var(--text-primary)">🗺️ My Journey</h4>
+          <div class="about__journey">
+            <div class="about__journey-item">
+              <div class="about__journey-dot" style="background:var(--color-success)"></div>
+              <div><p class="about__journey-year">2024 – Present</p><p class="about__journey-text">Final Year — AI Research &amp; Project Development</p></div>
+            </div>
+            <div class="about__journey-item">
+              <div class="about__journey-dot" style="background:var(--color-primary)"></div>
+              <div><p class="about__journey-year">2023</p><p class="about__journey-text">Completed Plus 2 Science — Computer Science &amp; Mathematics</p></div>
+            </div>
+            <div class="about__journey-item">
+              <div class="about__journey-dot" style="background:var(--color-secondary)"></div>
+              <div><p class="about__journey-year">2023</p><p class="about__journey-text">Began BE Computer Engineering at NCIT</p></div>
+            </div>
+            <div class="about__journey-item">
+              <div class="about__journey-dot" style="background:var(--color-accent)"></div>
+              <div><p class="about__journey-year">2021</p><p class="about__journey-text">Completed SEE — Science education foundation</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .about__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: var(--space-10); align-items: start; }
+    .about__bio-header { display: flex; align-items: center; gap: var(--space-4); }
+    .about__name { font-size: var(--fs-2xl); font-weight: var(--fw-bold); }
+    .about__title-text { font-size: var(--fs-sm); margin-top: 2px; }
+    .about__right { display: flex; flex-direction: column; }
+    .about__info-list { display: flex; flex-direction: column; gap: var(--space-3); }
+    .about__info-item { display: flex; align-items: center; gap: var(--space-3); font-size: var(--fs-sm); color: var(--text-muted); }
+    .about__info-item i { color: var(--color-primary); width: 16px; flex-shrink: 0; }
+    .about__journey { display: flex; flex-direction: column; gap: var(--space-4); }
+    .about__journey-item { display: flex; align-items: flex-start; gap: var(--space-3); }
+    .about__journey-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; box-shadow: 0 0 8px currentColor; }
+    .about__journey-year { font-size: var(--fs-xs); color: var(--color-accent-light); font-weight: var(--fw-semibold); letter-spacing: var(--ls-wide); }
+    .about__journey-text { font-size: var(--fs-sm); color: var(--text-muted); margin-top: 2px; }
+    @media(max-width:1024px) { .about__grid { grid-template-columns: 1fr; } }
+    @media(max-width:768px) { .about__stats.grid-2 { grid-template-columns: repeat(2,1fr); } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  TECH STACK SECTION                               -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="tech-stack" aria-label="Tech Stack">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Arsenal</span>
+      <h2 class="section__title">⚡ Tech <span class="text-gradient">Stack</span></h2>
+      <p class="section__subtitle">The tools and technologies I use to build intelligent, scalable systems.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="techstack__grid">
+
+      <!-- Programming Languages -->
+      <div class="card card--glass techstack__cat" data-aos="fade-up" data-aos-delay="0">
+        <div class="techstack__cat-header">
+          <span class="techstack__cat-icon">💻</span>
+          <h3 class="techstack__cat-title">Programming</h3>
+        </div>
+        <div class="techstack__chips">
+          <div class="techstack__chip" data-tooltip="Python"><span class="techstack__chip-icon">🐍</span><span>Python</span></div>
+          <div class="techstack__chip" data-tooltip="Java"><span class="techstack__chip-icon">☕</span><span>Java</span></div>
+          <div class="techstack__chip" data-tooltip="JavaScript"><span class="techstack__chip-icon">🟨</span><span>JavaScript</span></div>
+          <div class="techstack__chip" data-tooltip="C"><span class="techstack__chip-icon">⚙️</span><span>C</span></div>
+          <div class="techstack__chip" data-tooltip="C++"><span class="techstack__chip-icon">🔧</span><span>C++</span></div>
+          <div class="techstack__chip" data-tooltip="Dart"><span class="techstack__chip-icon">🎯</span><span>Dart</span></div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="card card--glass techstack__cat" data-aos="fade-up" data-aos-delay="80">
+        <div class="techstack__cat-header">
+          <span class="techstack__cat-icon">🎨</span>
+          <h3 class="techstack__cat-title">Frontend</h3>
+        </div>
+        <div class="techstack__chips">
+          <div class="techstack__chip"><span class="techstack__chip-icon">🌐</span><span>HTML5</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🎨</span><span>CSS3</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🟨</span><span>JavaScript</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">📱</span><span>Flutter</span></div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="card card--glass techstack__cat" data-aos="fade-up" data-aos-delay="120">
+        <div class="techstack__cat-header">
+          <span class="techstack__cat-icon">⚙️</span>
+          <h3 class="techstack__cat-title">Backend</h3>
+        </div>
+        <div class="techstack__chips">
+          <div class="techstack__chip"><span class="techstack__chip-icon">⚡</span><span>FastAPI</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🟩</span><span>Node.js</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🔗</span><span>REST API</span></div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="card card--glass techstack__cat" data-aos="fade-up" data-aos-delay="160">
+        <div class="techstack__cat-header">
+          <span class="techstack__cat-icon">🗄️</span>
+          <h3 class="techstack__cat-title">Databases</h3>
+        </div>
+        <div class="techstack__chips">
+          <div class="techstack__chip"><span class="techstack__chip-icon">🐘</span><span>PostgreSQL</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🐬</span><span>MySQL</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🪶</span><span>SQLite</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🔥</span><span>Firebase</span></div>
+        </div>
+      </div>
+
+      <!-- AI / ML -->
+      <div class="card card--glass techstack__cat techstack__cat--featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="techstack__cat-header">
+          <span class="techstack__cat-icon">🤖</span>
+          <h3 class="techstack__cat-title">AI / ML</h3>
+          <span class="badge badge--glow" style="margin-left:auto;font-size:0.55rem">Core Focus</span>
+        </div>
+        <div class="techstack__chips">
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">🧠</span><span>TensorFlow</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">🔥</span><span>PyTorch</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">📊</span><span>Scikit-learn</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">📷</span><span>OpenCV</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">🔢</span><span>NumPy</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">🐼</span><span>Pandas</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">🤗</span><span>Transformers</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">👁️</span><span>Computer Vision</span></div>
+          <div class="techstack__chip techstack__chip--glow"><span class="techstack__chip-icon">🌊</span><span>Deep Learning</span></div>
+        </div>
+      </div>
+
+      <!-- Dev Tools -->
+      <div class="card card--glass techstack__cat" data-aos="fade-up" data-aos-delay="240">
+        <div class="techstack__cat-header">
+          <span class="techstack__cat-icon">🛠️</span>
+          <h3 class="techstack__cat-title">Dev Tools</h3>
+        </div>
+        <div class="techstack__chips">
+          <div class="techstack__chip"><span class="techstack__chip-icon">🌿</span><span>Git</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🐙</span><span>GitHub</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">💻</span><span>VS Code</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🐳</span><span>Docker</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🐧</span><span>Linux</span></div>
+          <div class="techstack__chip"><span class="techstack__chip-icon">🎨</span><span>Figma</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .techstack__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+    .techstack__cat-header { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-5); }
+    .techstack__cat-icon { font-size: 1.5rem; }
+    .techstack__cat-title { font-size: var(--fs-base); font-weight: var(--fw-semibold); color: var(--text-primary); }
+    .techstack__cat--featured { border-color: var(--border-primary); background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(124,58,237,0.06)); }
+    .techstack__chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .techstack__chip { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--border-radius-sm); font-size: var(--fs-xs); font-weight: var(--fw-medium); color: var(--text-secondary); transition: var(--transition-spring); cursor: default; }
+    .techstack__chip:hover { background: var(--bg-card-hover); border-color: var(--color-primary); color: var(--text-primary); transform: translateY(-2px) scale(1.04); box-shadow: var(--shadow-primary); }
+    .techstack__chip-icon { font-size: 1rem; }
+    .techstack__chip--glow { border-color: rgba(37,99,235,0.25); background: rgba(37,99,235,0.06); }
+    .techstack__chip--glow:hover { box-shadow: var(--shadow-glow-primary); }
+    @media(max-width:1024px) { .techstack__grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:640px) { .techstack__grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  SKILLS SECTION                                   -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="skills" aria-label="Skills">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-brain" aria-hidden="true"></i> Expertise</span>
+      <h2 class="section__title">🧠 Skills &amp; <span class="text-gradient">Expertise</span></h2>
+      <p class="section__subtitle">Core competencies across AI/ML, development, and research domains.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="skills__grid">
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(37,99,235,0.05))">
+          <span class="skill-card__icon">💻</span>
+        </div>
+        <h3 class="skill-card__title">Programming</h3>
+        <p class="skill-card__desc">Proficient in Python, Java, JavaScript, C, C++, and Dart. Clean, efficient, and maintainable code.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="88%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Advanced</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(6,182,212,0.05))">
+          <span class="skill-card__icon">🎨</span>
+        </div>
+        <h3 class="skill-card__title">Frontend Dev</h3>
+        <p class="skill-card__desc">Building responsive, beautiful UIs with HTML5, CSS3, JavaScript, and Flutter for cross-platform apps.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="82%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Proficient</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(124,58,237,0.05))">
+          <span class="skill-card__icon">⚙️</span>
+        </div>
+        <h3 class="skill-card__title">Backend Dev</h3>
+        <p class="skill-card__desc">RESTful APIs with FastAPI and Node.js, database management with PostgreSQL, MySQL, Firebase.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="78%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Proficient</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(124,58,237,0.1))">
+          <span class="skill-card__icon">🤖</span>
+        </div>
+        <h3 class="skill-card__title">Artificial Intelligence</h3>
+        <p class="skill-card__desc">Designing and implementing AI systems using TensorFlow, PyTorch, and Transformers for real-world impact.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="85%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Advanced</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(16,185,129,0.05))">
+          <span class="skill-card__icon">📊</span>
+        </div>
+        <h3 class="skill-card__title">Machine Learning</h3>
+        <p class="skill-card__desc">Supervised, unsupervised, and reinforcement learning. Feature engineering, model training and evaluation.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="83%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Advanced</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(245,158,11,0.05))">
+          <span class="skill-card__icon">🌊</span>
+        </div>
+        <h3 class="skill-card__title">Deep Learning</h3>
+        <p class="skill-card__desc">CNNs, RNNs, Transformers, GANs. Architectures for image, text, and sequential data problems.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="80%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Proficient</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(239,68,68,0.2),rgba(239,68,68,0.05))">
+          <span class="skill-card__icon">📷</span>
+        </div>
+        <h3 class="skill-card__title">Computer Vision</h3>
+        <p class="skill-card__desc">Object detection, image segmentation, face recognition, and medical imaging using OpenCV and deep learning.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="82%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Advanced</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(37,99,235,0.1))">
+          <span class="skill-card__icon">🦾</span>
+        </div>
+        <h3 class="skill-card__title">Robotics</h3>
+        <p class="skill-card__desc">Embedded systems, sensor integration, ESP32 automation, IoT and smart home solutions.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="70%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Intermediate</span>
+        </div>
+      </div>
+
+      <div class="skill-card card card--glass" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="skill-card__icon-wrap" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(6,182,212,0.1))">
+          <span class="skill-card__icon">🧩</span>
+        </div>
+        <h3 class="skill-card__title">Problem Solving</h3>
+        <p class="skill-card__desc">Algorithmic thinking, data structures, competitive programming, and creative approach to complex challenges.</p>
+        <div class="skill-card__level">
+          <div class="skill-card__level-bar">
+            <div class="progress-bar"><div class="progress-bar__fill" data-width="86%" style="width:0"></div></div>
+          </div>
+          <span class="skill-card__level-label">Advanced</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .skills__grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--space-6); }
+    .skill-card { display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-6); }
+    .skill-card__icon-wrap { width: 52px; height: 52px; border-radius: var(--border-radius-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .skill-card__icon { font-size: 1.6rem; }
+    .skill-card__title { font-size: var(--fs-base); font-weight: var(--fw-semibold); color: var(--text-primary); }
+    .skill-card__desc { font-size: var(--fs-xs); color: var(--text-muted); line-height: var(--lh-relaxed); flex: 1; }
+    .skill-card__level { display: flex; align-items: center; gap: var(--space-3); margin-top: auto; }
+    .skill-card__level-bar { flex: 1; }
+    .skill-card__level-label { font-size: var(--fs-2xs); color: var(--color-accent-light); font-weight: var(--fw-semibold); white-space: nowrap; letter-spacing: var(--ls-wide); }
+    @media(max-width:1024px) { .skills__grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:640px) { .skills__grid { grid-template-columns: 1fr; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  FEATURED PROJECTS PREVIEW                        -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="projects-preview" aria-label="Featured projects">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-rocket" aria-hidden="true"></i> Portfolio</span>
+      <h2 class="section__title">🚀 Featured <span class="text-gradient">Projects</span></h2>
+      <p class="section__subtitle">A selection of my best work — AI systems, full-stack apps, and IoT solutions.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="projects-preview__grid">
+
+      <!-- Project 1 -->
+      <div class="card card--project proj-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="card__image-wrap">
+          <img src="assets/images/projects/ai-healthcare.svg" alt="AI Healthcare Assistant" loading="lazy"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-card__img-placeholder\'><span>🏥</span><span>AI Healthcare Assistant</span></div>'"/>
+          <div class="card__image-overlay">
+            <a href="projects.html" class="btn btn--primary btn--sm" data-transition><i class="fa-solid fa-eye"></i> View</a>
+            <a href="https://github.com/SKS-650/ai-healthcare-assistant" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" aria-label="View AI Healthcare Assistant source code"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <span class="proj-card__category-badge">🤖 AI / ML</span>
+        </div>
+        <div class="card__body">
+          <div class="tags"><span class="tag tag--primary">Python</span><span class="tag tag--secondary">TensorFlow</span><span class="tag tag--accent">FastAPI</span><span class="tag">NLP</span></div>
+          <h3 class="card__title">AI Healthcare Assistant for Rural Areas</h3>
+          <p class="card__desc">An intelligent healthcare assistant that provides symptom analysis, disease prediction, and medical guidance for rural communities lacking specialist access. Built with NLP and medical AI models.</p>
+          <div class="card__footer">
+            <div class="proj-card__meta"><i class="fa-solid fa-calendar fa-xs"></i><span>2024</span></div>
+            <a href="projects.html" class="btn btn--outline btn--sm" data-transition>Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card card--project proj-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
+        <div class="card__image-wrap">
+          <img src="assets/images/projects/face-disease.svg" alt="Face Disease Detection" loading="lazy"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-card__img-placeholder\'><span>🔬</span><span>Face Disease Detection</span></div>'"/>
+          <div class="card__image-overlay">
+            <a href="projects.html" class="btn btn--primary btn--sm" data-transition><i class="fa-solid fa-eye"></i> View</a>
+            <a href="https://github.com/SKS-650/face-disease-detection" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" aria-label="View Face Disease Detection source code"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <span class="proj-card__category-badge">👁️ Computer Vision</span>
+        </div>
+        <div class="card__body">
+          <div class="tags"><span class="tag tag--primary">OpenCV</span><span class="tag tag--secondary">PyTorch</span><span class="tag tag--accent">CNN</span><span class="tag">Medical AI</span></div>
+          <h3 class="card__title">Face Disease Detection System</h3>
+          <p class="card__desc">A deep learning computer vision system that detects facial skin diseases and conditions using convolutional neural networks. Achieves high accuracy on dermatological classification tasks.</p>
+          <div class="card__footer">
+            <div class="proj-card__meta"><i class="fa-solid fa-calendar fa-xs"></i><span>2024</span></div>
+            <a href="projects.html" class="btn btn--outline btn--sm" data-transition>Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card card--project proj-card" data-aos="fade-up" data-aos-delay="160" data-tilt>
+        <div class="card__image-wrap">
+          <img src="assets/images/projects/smart-home.svg" alt="Smart Home Automation" loading="lazy"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-card__img-placeholder\'><span>🏠</span><span>Smart Home Automation</span></div>'"/>
+          <div class="card__image-overlay">
+            <a href="projects.html" class="btn btn--primary btn--sm" data-transition><i class="fa-solid fa-eye"></i> View</a>
+            <a href="https://github.com/SKS-650/smart-home-esp32" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" aria-label="View Smart Home Automation source code"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <span class="proj-card__category-badge">🤖 IoT / Robotics</span>
+        </div>
+        <div class="card__body">
+          <div class="tags"><span class="tag tag--primary">ESP32</span><span class="tag tag--secondary">C++</span><span class="tag tag--accent">IoT</span><span class="tag">Firebase</span></div>
+          <h3 class="card__title">Smart Home Automation using ESP32</h3>
+          <p class="card__desc">A complete smart home system built on ESP32 microcontrollers with real-time control via mobile app, voice commands, sensor automation, and cloud integration using Firebase.</p>
+          <div class="card__footer">
+            <div class="proj-card__meta"><i class="fa-solid fa-calendar fa-xs"></i><span>2023</span></div>
+            <a href="projects.html" class="btn btn--outline btn--sm" data-transition>Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card card--project proj-card" data-aos="fade-up" data-aos-delay="240" data-tilt>
+        <div class="card__image-wrap">
+          <img src="assets/images/projects/student-mgmt.svg" alt="Student Management System" loading="lazy"
+               onerror="this.parentElement.innerHTML='<div class=\'proj-card__img-placeholder\'><span>🎓</span><span>Student Management System</span></div>'"/>
+          <div class="card__image-overlay">
+            <a href="projects.html" class="btn btn--primary btn--sm" data-transition><i class="fa-solid fa-eye"></i> View</a>
+            <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--ghost btn--sm" aria-label="View GitHub profile"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <span class="proj-card__category-badge">💻 Full Stack</span>
+        </div>
+        <div class="card__body">
+          <div class="tags"><span class="tag tag--primary">Python</span><span class="tag tag--secondary">FastAPI</span><span class="tag tag--accent">PostgreSQL</span><span class="tag">Flutter</span></div>
+          <h3 class="card__title">Student Management System</h3>
+          <p class="card__desc">A full-featured student management platform with attendance tracking, grade management, reports, and a Flutter mobile app. Backend powered by FastAPI and PostgreSQL.</p>
+          <div class="card__footer">
+            <div class="proj-card__meta"><i class="fa-solid fa-calendar fa-xs"></i><span>2023</span></div>
+            <a href="projects.html" class="btn btn--outline btn--sm" data-transition>Details →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-12)" data-aos="fade-up">
+      <a href="projects.html" class="btn btn--gradient btn--lg magnetic" data-transition>
+        <i class="fa-solid fa-grid-2" aria-hidden="true"></i> View All Projects
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .projects-preview__grid { display: grid; grid-template-columns: repeat(2,1fr); gap: var(--space-8); }
+    .proj-card__category-badge { position:absolute; top:var(--space-3); left:var(--space-3); padding:4px 12px; font-size:var(--fs-2xs); font-weight:var(--fw-bold); border-radius:var(--border-radius-full); background:var(--glass-bg-strong); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-border); color:var(--text-primary); letter-spacing:var(--ls-wide); }
+    .proj-card__img-placeholder { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:var(--space-3); background:var(--bg-elevated); font-size:var(--fs-xs); color:var(--text-faint); font-weight:var(--fw-medium); }
+    .proj-card__img-placeholder span:first-child { font-size:3rem; }
+    .proj-card__meta { display:flex; align-items:center; gap:var(--space-2); font-size:var(--fs-xs); color:var(--text-faint); }
+    @media(max-width:768px) { .projects-preview__grid { grid-template-columns:1fr; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  RESEARCH INTERESTS                               -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="research" aria-label="Research interests">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-flask" aria-hidden="true"></i> Research</span>
+      <h2 class="section__title">🔬 Research <span class="text-gradient">Interests</span></h2>
+      <p class="section__subtitle">Areas I'm passionate about exploring and contributing to through research and development.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="research__grid">
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(124,58,237,0.1))">🤖</div>
+        <h3 class="research__card-title">Artificial Intelligence</h3>
+        <p class="research__card-desc">General AI, AGI research, intelligent agents, and reasoning systems that can learn and adapt.</p>
+        <span class="tag tag--primary" style="margin-top:auto">Core Interest</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(6,182,212,0.1))">📊</div>
+        <h3 class="research__card-title">Machine Learning</h3>
+        <p class="research__card-desc">Novel ML algorithms, transfer learning, few-shot learning, and efficient model training techniques.</p>
+        <span class="tag tag--secondary" style="margin-top:auto">Active Study</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(37,99,235,0.1))">🌊</div>
+        <h3 class="research__card-title">Deep Learning</h3>
+        <p class="research__card-desc">Neural architecture design, attention mechanisms, and scaling laws for large neural networks.</p>
+        <span class="tag tag--accent" style="margin-top:auto">Research Focus</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(239,68,68,0.2),rgba(245,158,11,0.1))">📷</div>
+        <h3 class="research__card-title">Computer Vision</h3>
+        <p class="research__card-desc">Medical image analysis, scene understanding, real-time detection, and visual perception systems.</p>
+        <span class="tag tag--danger" style="margin-top:auto">Project Active</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.1))">🏥</div>
+        <h3 class="research__card-title">Medical AI</h3>
+        <p class="research__card-desc">AI-driven diagnostics, disease prediction, rural healthcare solutions, and medical imaging AI.</p>
+        <span class="tag tag--success" style="margin-top:auto">Passion Area</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(239,68,68,0.1))">🦾</div>
+        <h3 class="research__card-title">Robotics</h3>
+        <p class="research__card-desc">Autonomous systems, robot perception, motion planning, and human-robot interaction design.</p>
+        <span class="tag tag--warning" style="margin-top:auto">Exploring</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(37,99,235,0.1))">🖥️</div>
+        <h3 class="research__card-title">Human-Computer Interaction</h3>
+        <p class="research__card-desc">Intuitive interfaces, voice UI, gesture control, and accessibility-first design for AI systems.</p>
+        <span class="tag tag--secondary" style="margin-top:auto">Interest</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(16,185,129,0.1))">⚡</div>
+        <h3 class="research__card-title">Edge AI</h3>
+        <p class="research__card-desc">Deploying AI on resource-constrained devices, model compression, TinyML, and on-device inference.</p>
+        <span class="tag tag--accent" style="margin-top:auto">Future Focus</span>
+      </div>
+      <div class="research__card card card--glass" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="research__card-icon" style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(16,185,129,0.1))">💡</div>
+        <h3 class="research__card-title">Smart Healthcare</h3>
+        <p class="research__card-desc">Bridging AI and healthcare in developing nations — accessible, affordable, and impactful medical AI tools.</p>
+        <span class="tag tag--primary" style="margin-top:auto">Mission</span>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .research__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-6); }
+    .research__card { display:flex; flex-direction:column; gap:var(--space-3); padding:var(--space-6); }
+    .research__card-icon { width:52px; height:52px; border-radius:var(--border-radius-md); display:flex; align-items:center; justify-content:center; font-size:1.6rem; flex-shrink:0; }
+    .research__card-title { font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); }
+    .research__card-desc { font-size:var(--fs-xs); color:var(--text-muted); line-height:var(--lh-relaxed); flex:1; }
+    @media(max-width:1024px) { .research__grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:640px) { .research__grid { grid-template-columns:1fr; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  ACHIEVEMENTS SECTION                             -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="achievements" aria-label="Achievements">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Milestones</span>
+      <h2 class="section__title">🏆 Achievements &amp; <span class="text-gradient">Highlights</span></h2>
+      <p class="section__subtitle">Key milestones, accomplishments, and things I'm proud of along my journey.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="grid-3 achievements__grid">
+      <div class="card card--glass achieve-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="achieve-card__icon">🎓</div>
+        <h3 class="achieve-card__title">Academic Excellence</h3>
+        <p class="achieve-card__desc">Maintaining strong academic performance in BE Computer Engineering at NCIT, Pokhara University, with focus on AI/ML specialization.</p>
+        <div class="achieve-card__meta"><span class="tag tag--success">Ongoing</span></div>
+      </div>
+      <div class="card card--glass achieve-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
+        <div class="achieve-card__icon">🚀</div>
+        <h3 class="achieve-card__title">4 Projects Built</h3>
+        <p class="achieve-card__desc">Developed over 15 projects spanning AI/ML, full-stack web development, mobile apps, IoT systems, and computer vision applications.</p>
+        <div class="achieve-card__meta"><span class="tag tag--primary">Portfolio</span></div>
+      </div>
+      <div class="card card--glass achieve-card" data-aos="fade-up" data-aos-delay="160" data-tilt>
+        <div class="achieve-card__icon">📜</div>
+        <h3 class="achieve-card__title">7 Certifications</h3>
+        <p class="achieve-card__desc">Earned certifications across AI, ML, Deep Learning, Cloud, Web Development, Flutter, Computer Vision, and Cybersecurity domains.</p>
+        <div class="achieve-card__meta"><span class="tag tag--accent">Verified</span></div>
+      </div>
+      <div class="card card--glass achieve-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="achieve-card__icon">🧠</div>
+        <h3 class="achieve-card__title">AI Research Initiative</h3>
+        <p class="achieve-card__desc">Actively researching Medical AI for rural healthcare in Nepal, with a focus on accessible diagnostic tools for underserved communities.</p>
+        <div class="achieve-card__meta"><span class="tag tag--secondary">Research</span></div>
+      </div>
+      <div class="card card--glass achieve-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
+        <div class="achieve-card__icon">🌐</div>
+        <h3 class="achieve-card__title">Multi-Domain Expertise</h3>
+        <p class="achieve-card__desc">Mastered a diverse tech stack — from embedded systems and robotics to cloud-native AI applications and mobile development.</p>
+        <div class="achieve-card__meta"><span class="tag tag--warning">Versatile</span></div>
+      </div>
+      <div class="card card--glass achieve-card" data-aos="fade-up" data-aos-delay="160" data-tilt>
+        <div class="achieve-card__icon">🎯</div>
+        <h3 class="achieve-card__title">Future Goals</h3>
+        <p class="achieve-card__desc">Aspiring to pursue graduate research in AI, contribute to open-source projects, and build impactful AI-powered products for South Asia.</p>
+        <div class="achieve-card__meta"><span class="tag tag--primary">Vision</span></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .achieve-card { display:flex; flex-direction:column; gap:var(--space-3); padding:var(--space-6); }
+    .achieve-card__icon { font-size:2.5rem; }
+    .achieve-card__title { font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); }
+    .achieve-card__desc { font-size:var(--fs-xs); color:var(--text-muted); line-height:var(--lh-relaxed); flex:1; }
+    .achieve-card__meta { margin-top:auto; }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  SERVICES SECTION                                 -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="services" aria-label="Services">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> What I Offer</span>
+      <h2 class="section__title">💼 My <span class="text-gradient">Services</span></h2>
+      <p class="section__subtitle">Areas where I can help you build something amazing.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="grid-3 services__grid">
+      <div class="card card--glass service-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="service-card__icon" style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(124,58,237,0.1))">🤖</div>
+        <h3 class="service-card__title">AI Solutions</h3>
+        <p class="service-card__desc">Custom AI model development, integration, and deployment. From concept to production-ready intelligent systems.</p>
+        <ul class="service-card__list">
+          <li>Model Design &amp; Training</li><li>API Integration</li><li>AI Consulting</li>
+        </ul>
+      </div>
+      <div class="card card--glass service-card" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="service-card__icon" style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.1))">📊</div>
+        <h3 class="service-card__title">Machine Learning</h3>
+        <p class="service-card__desc">Data analysis, predictive modeling, feature engineering, and ML pipeline development for business problems.</p>
+        <ul class="service-card__list">
+          <li>Predictive Models</li><li>Data Analysis</li><li>ML Pipelines</li>
+        </ul>
+      </div>
+      <div class="card card--glass service-card" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="service-card__icon" style="background:linear-gradient(135deg,rgba(239,68,68,0.2),rgba(245,158,11,0.1))">📷</div>
+        <h3 class="service-card__title">Computer Vision</h3>
+        <p class="service-card__desc">Object detection, image classification, face recognition, medical imaging, and real-time vision systems.</p>
+        <ul class="service-card__list">
+          <li>Object Detection</li><li>Image Segmentation</li><li>Medical Imaging</li>
+        </ul>
+      </div>
+      <div class="card card--glass service-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="service-card__icon" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(37,99,235,0.1))">🌐</div>
+        <h3 class="service-card__title">Web Development</h3>
+        <p class="service-card__desc">Full-stack web applications using modern frameworks, responsive design, and RESTful API development.</p>
+        <ul class="service-card__list">
+          <li>Full Stack Apps</li><li>REST APIs</li><li>UI/UX Implementation</li>
+        </ul>
+      </div>
+      <div class="card card--glass service-card" data-aos="fade-up" data-aos-delay="60" data-tilt>
+        <div class="service-card__icon" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(6,182,212,0.1))">📱</div>
+        <h3 class="service-card__title">Mobile Development</h3>
+        <p class="service-card__desc">Cross-platform mobile apps with Flutter — beautiful, performant, and deployed on both iOS and Android.</p>
+        <ul class="service-card__list">
+          <li>Flutter Apps</li><li>Firebase Backend</li><li>Cross-Platform</li>
+        </ul>
+      </div>
+      <div class="card card--glass service-card" data-aos="fade-up" data-aos-delay="120" data-tilt>
+        <div class="service-card__icon" style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(16,185,129,0.1))">🔬</div>
+        <h3 class="service-card__title">Research &amp; Prototyping</h3>
+        <p class="service-card__desc">Technical research, proof-of-concept development, academic paper implementation, and innovation prototyping.</p>
+        <ul class="service-card__list">
+          <li>POC Development</li><li>Technical Research</li><li>Innovation Projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <style>
+    .service-card { display:flex; flex-direction:column; gap:var(--space-3); padding:var(--space-6); }
+    .service-card__icon { width:52px; height:52px; border-radius:var(--border-radius-md); display:flex; align-items:center; justify-content:center; font-size:1.6rem; flex-shrink:0; }
+    .service-card__title { font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); }
+    .service-card__desc { font-size:var(--fs-xs); color:var(--text-muted); line-height:var(--lh-relaxed); }
+    .service-card__list { list-style:none; display:flex; flex-direction:column; gap:6px; margin-top:auto; }
+    .service-card__list li { font-size:var(--fs-xs); color:var(--text-faint); display:flex; align-items:center; gap:var(--space-2); }
+    .service-card__list li::before { content:'→'; color:var(--color-primary); font-size:0.7rem; }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  CODING PROFILES SECTION                          -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="coding-profiles" aria-label="Coding profiles">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-code" aria-hidden="true"></i> Competitive</span>
+      <h2 class="section__title">⌨️ Coding <span class="text-gradient">Profiles</span></h2>
+      <p class="section__subtitle">Where I practice, compete, and sharpen my problem-solving skills.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="coding-profiles__grid">
+      <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="card card--glass coding-profile-card" data-aos="fade-up" data-aos-delay="0" data-tilt aria-label="GitHub Profile">
+        <div class="coding-profile__icon" style="background:rgba(255,255,255,0.08);color:var(--text-primary)"><i class="fa-brands fa-github"></i></div>
+        <div class="coding-profile__info">
+          <h3 class="coding-profile__name">GitHub</h3>
+          <p class="coding-profile__handle">@SKS-650</p>
+          <p class="coding-profile__stat"><i class="fa-solid fa-star fa-xs"></i> Repositories &amp; Contributions</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square coding-profile__arrow"></i>
+      </a>
+      <a href="https://leetcode.com/u/shyamkishorsah" target="_blank" rel="noopener" class="card card--glass coding-profile-card" data-aos="fade-up" data-aos-delay="60" data-tilt aria-label="LeetCode Profile">
+        <div class="coding-profile__icon" style="background:rgba(255,161,22,0.15);color:#FFA116"><i class="fa-solid fa-code"></i></div>
+        <div class="coding-profile__info">
+          <h3 class="coding-profile__name">LeetCode</h3>
+          <p class="coding-profile__handle">@shyamkishorsah</p>
+          <p class="coding-profile__stat"><i class="fa-solid fa-check-circle fa-xs"></i> DSA Problem Solving</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square coding-profile__arrow"></i>
+      </a>
+      <a href="https://codeforces.com/profile/shyamkishorsah" target="_blank" rel="noopener" class="card card--glass coding-profile-card" data-aos="fade-up" data-aos-delay="120" data-tilt aria-label="Codeforces Profile">
+        <div class="coding-profile__icon" style="background:rgba(26,92,255,0.15);color:#1A5CFF"><i class="fa-solid fa-trophy"></i></div>
+        <div class="coding-profile__info">
+          <h3 class="coding-profile__name">Codeforces</h3>
+          <p class="coding-profile__handle">@shyamkishorsah</p>
+          <p class="coding-profile__stat"><i class="fa-solid fa-fire fa-xs"></i> Competitive Programming</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square coding-profile__arrow"></i>
+      </a>
+      <a href="https://www.codechef.com/users/shyamkishorsah" target="_blank" rel="noopener" class="card card--glass coding-profile-card" data-aos="fade-up" data-aos-delay="0" data-tilt aria-label="CodeChef Profile">
+        <div class="coding-profile__icon" style="background:rgba(90,50,0,0.3);color:#CF7F3A"><i class="fa-solid fa-utensils"></i></div>
+        <div class="coding-profile__info">
+          <h3 class="coding-profile__name">CodeChef</h3>
+          <p class="coding-profile__handle">@shyamkishorsah</p>
+          <p class="coding-profile__stat"><i class="fa-solid fa-star fa-xs"></i> Monthly Contests</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square coding-profile__arrow"></i>
+      </a>
+      <a href="https://www.hackerrank.com/shyamkishorsah" target="_blank" rel="noopener" class="card card--glass coding-profile-card" data-aos="fade-up" data-aos-delay="60" data-tilt aria-label="HackerRank Profile">
+        <div class="coding-profile__icon" style="background:rgba(0,164,78,0.15);color:#00A84E"><i class="fa-solid fa-terminal"></i></div>
+        <div class="coding-profile__info">
+          <h3 class="coding-profile__name">HackerRank</h3>
+          <p class="coding-profile__handle">@shyamkishorsah</p>
+          <p class="coding-profile__stat"><i class="fa-solid fa-medal fa-xs"></i> Skill Certifications</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square coding-profile__arrow"></i>
+      </a>
+    </div>
+  </div>
+  <style>
+    .coding-profiles__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--space-6); }
+    .coding-profile-card { display:flex; align-items:center; gap:var(--space-4); padding:var(--space-5); text-decoration:none; }
+    .coding-profile__icon { width:48px; height:48px; border-radius:var(--border-radius-md); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0; }
+    .coding-profile__info { flex:1; }
+    .coding-profile__name { font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); }
+    .coding-profile__handle { font-size:var(--fs-xs); color:var(--text-muted); margin-top:2px; }
+    .coding-profile__stat { font-size:var(--fs-2xs); color:var(--text-faint); margin-top:4px; display:flex; align-items:center; gap:4px; }
+    .coding-profile__arrow { color:var(--text-faint); font-size:var(--fs-sm); transition:var(--transition-spring); }
+    .coding-profile-card:hover .coding-profile__arrow { color:var(--color-primary); transform:translate(3px,-3px); }
+    @media(max-width:1024px) { .coding-profiles__grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:640px) { .coding-profiles__grid { grid-template-columns:1fr; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  GITHUB SHOWCASE                                  -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="github" aria-label="GitHub showcase">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-brands fa-github" aria-hidden="true"></i> Open Source</span>
+      <h2 class="section__title">🐙 GitHub <span class="text-gradient">Showcase</span></h2>
+      <p class="section__subtitle">My open-source contributions and pinned repositories — all code, always learning.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="github__layout">
+      <div class="card card--glass github__contrib-card" data-aos="fade-up">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-5)">
+          <h3 style="font-size:var(--fs-base);font-weight:var(--fw-semibold)">📈 GitHub Profile</h3>
+          <span class="tag tag--success">Open Source</span>
+        </div>
+        <p style="font-size:var(--fs-sm);color:var(--text-muted);max-width:52ch;margin-bottom:var(--space-6)">
+          Explore my open-source work, active repositories, and ongoing projects on GitHub. This section highlights selected repos and links to my latest code.
+        </p>
+        <div class="github__stats-row">
+          <div class="github__stat"><span class="github__stat-num text-gradient">SKS-650</span><span class="github__stat-label">GitHub handle</span></div>
+          <div class="github__stat"><span class="github__stat-num text-gradient">3+</span><span class="github__stat-label">Pinned repos</span></div>
+          <div class="github__stat"><span class="github__stat-num text-gradient">AI / IoT</span><span class="github__stat-label">Primary focus</span></div>
+        </div>
+        <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--outline btn--sm" style="margin-top:var(--space-6);width:100%;justify-content:center">
+          <i class="fa-brands fa-github"></i> View GitHub Profile
+        </a>
+      </div>
+
+      <!-- Pinned Repos -->
+      <div class="github__repos" data-aos="fade-up" data-aos-delay="100">
+        <h3 style="font-size:var(--fs-base);font-weight:var(--fw-semibold);margin-bottom:var(--space-5)">📌 Pinned Repositories</h3>
+        <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+          <div class="github__repo-card card card--glass">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-2)">
+              <i class="fa-brands fa-github" style="color:var(--text-muted)"></i>
+              <a href="https://github.com/SKS-650/ai-healthcare-assistant" target="_blank" rel="noopener" style="color:var(--color-primary-light);font-weight:var(--fw-semibold);font-size:var(--fs-sm)">ai-healthcare-assistant</a>
+              <span class="tag tag--primary" style="margin-left:auto">Public</span>
+            </div>
+            <p style="font-size:var(--fs-xs);color:var(--text-muted)">AI-powered healthcare assistant for rural Nepal using NLP and medical AI</p>
+            <div style="display:flex;gap:var(--space-4);margin-top:var(--space-3)">
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><span style="width:8px;height:8px;background:#3572A5;border-radius:50%;display:inline-block;margin-right:4px"></span>Python</span>
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><i class="fa-solid fa-star fa-xs"></i> —</span>
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><i class="fa-solid fa-code-fork fa-xs"></i> —</span>
+            </div>
+          </div>
+          <div class="github__repo-card card card--glass">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-2)">
+              <i class="fa-brands fa-github" style="color:var(--text-muted)"></i>
+              <a href="https://github.com/SKS-650/face-disease-detection" target="_blank" rel="noopener" style="color:var(--color-primary-light);font-weight:var(--fw-semibold);font-size:var(--fs-sm)">face-disease-detection</a>
+              <span class="tag tag--primary" style="margin-left:auto">Public</span>
+            </div>
+            <p style="font-size:var(--fs-xs);color:var(--text-muted)">Deep learning model for facial skin disease classification using CNN</p>
+            <div style="display:flex;gap:var(--space-4);margin-top:var(--space-3)">
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><span style="width:8px;height:8px;background:#3572A5;border-radius:50%;display:inline-block;margin-right:4px"></span>Python</span>
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><i class="fa-solid fa-star fa-xs"></i> —</span>
+            </div>
+          </div>
+          <div class="github__repo-card card card--glass">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-2)">
+              <i class="fa-brands fa-github" style="color:var(--text-muted)"></i>
+              <a href="https://github.com/SKS-650/smart-home-esp32" target="_blank" rel="noopener" style="color:var(--color-primary-light);font-weight:var(--fw-semibold);font-size:var(--fs-sm)">smart-home-esp32</a>
+              <span class="tag tag--accent" style="margin-left:auto">Public</span>
+            </div>
+            <p style="font-size:var(--fs-xs);color:var(--text-muted)">IoT smart home automation system with ESP32 and Firebase</p>
+            <div style="display:flex;gap:var(--space-4);margin-top:var(--space-3)">
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><span style="width:8px;height:8px;background:#f34b7d;border-radius:50%;display:inline-block;margin-right:4px"></span>C++</span>
+              <span style="font-size:var(--fs-2xs);color:var(--text-faint)"><i class="fa-solid fa-star fa-xs"></i> —</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--outline btn--sm" style="margin-top:var(--space-6);width:100%;justify-content:center">
+          <i class="fa-brands fa-github"></i> View All Repositories
+        </a>
+      </div>
+    </div>
+  </div>
+  <style>
+    .github__layout { display:grid; grid-template-columns:1.4fr 1fr; gap:var(--space-8); }
+    .github__contrib-card { padding:var(--space-6); }
+    .github__stats-row { display:flex; justify-content:space-around; margin-top:var(--space-6); padding-top:var(--space-4); border-top:1px solid var(--border-subtle); }
+    .github__stat { display:flex; flex-direction:column; align-items:center; gap:2px; }
+    .github__stat-num { font-family:var(--font-heading); font-size:var(--fs-xl); font-weight:var(--fw-black); }
+    .github__stat-label { font-size:var(--fs-2xs); color:var(--text-faint); letter-spacing:var(--ls-wide); }
+    .github__repo-card { padding:var(--space-4); }
+    @media(max-width:1024px) { .github__layout { grid-template-columns:1fr; } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  CERTIFICATES PREVIEW                             -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="certificates-preview" aria-label="Certificates preview">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-award" aria-hidden="true"></i> Credentials</span>
+      <h2 class="section__title">📜 Certifications &amp; <span class="text-gradient">Learning</span></h2>
+      <p class="section__subtitle">Verified credentials across AI, ML, Cloud, Web, and more from top platforms worldwide.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="grid-auto cert-preview__grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="card card--glass cert-preview-card" data-tilt>
+        <div class="cert-preview-card__icon" style="background:linear-gradient(135deg,rgba(37,99,235,0.2),rgba(124,58,237,0.1))">🤖</div>
+        <h3 class="cert-preview-card__title">AI &amp; Machine Learning</h3>
+        <p class="cert-preview-card__count text-gradient">5+ Certificates</p>
+        <p class="cert-preview-card__platforms">Coursera · DeepLearning.AI · Kaggle</p>
+      </div>
+      <div class="card card--glass cert-preview-card" data-tilt>
+        <div class="cert-preview-card__icon" style="background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(37,99,235,0.1))">🌊</div>
+        <h3 class="cert-preview-card__title">Deep Learning</h3>
+        <p class="cert-preview-card__count text-gradient">3+ Certificates</p>
+        <p class="cert-preview-card__platforms">DeepLearning.AI · Fast.ai</p>
+      </div>
+      <div class="card card--glass cert-preview-card" data-tilt>
+        <div class="cert-preview-card__icon" style="background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.1))">🌐</div>
+        <h3 class="cert-preview-card__title">Web Development</h3>
+        <p class="cert-preview-card__count text-gradient">3+ Certificates</p>
+        <p class="cert-preview-card__platforms">Udemy · freeCodeCamp</p>
+      </div>
+      <div class="card card--glass cert-preview-card" data-tilt>
+        <div class="cert-preview-card__icon" style="background:linear-gradient(135deg,rgba(245,158,11,0.2),rgba(239,68,68,0.1))">☁️</div>
+        <h3 class="cert-preview-card__title">Cloud &amp; DevOps</h3>
+        <p class="cert-preview-card__count text-gradient">2+ Certificates</p>
+        <p class="cert-preview-card__platforms">Google · AWS · Azure</p>
+      </div>
+      <div class="card card--glass cert-preview-card" data-tilt>
+        <div class="cert-preview-card__icon" style="background:linear-gradient(135deg,rgba(124,58,237,0.2),rgba(37,99,235,0.1))">📱</div>
+        <h3 class="cert-preview-card__title">Flutter &amp; Mobile</h3>
+        <p class="cert-preview-card__count text-gradient">2+ Certificates</p>
+        <p class="cert-preview-card__platforms">Udemy · Google</p>
+      </div>
+      <div class="card card--glass cert-preview-card" data-tilt>
+        <div class="cert-preview-card__icon" style="background:linear-gradient(135deg,rgba(239,68,68,0.2),rgba(124,58,237,0.1))">🔐</div>
+        <h3 class="cert-preview-card__title">Cybersecurity</h3>
+        <p class="cert-preview-card__count text-gradient">1+ Certificate</p>
+        <p class="cert-preview-card__platforms">Cisco · Google</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-12)" data-aos="fade-up">
+      <a href="certificates.html" class="btn btn--gradient btn--lg magnetic" data-transition>
+        <i class="fa-solid fa-certificate" aria-hidden="true"></i> View All Certificates
+      </a>
+    </div>
+  </div>
+  <style>
+    .cert-preview-card { display:flex; flex-direction:column; align-items:center; gap:var(--space-3); padding:var(--space-6); text-align:center; }
+    .cert-preview-card__icon { width:56px; height:56px; border-radius:var(--border-radius-md); display:flex; align-items:center; justify-content:center; font-size:1.8rem; }
+    .cert-preview-card__title { font-size:var(--fs-sm); font-weight:var(--fw-semibold); color:var(--text-primary); }
+    .cert-preview-card__count { font-family:var(--font-heading); font-size:var(--fs-xl); font-weight:var(--fw-black); }
+    .cert-preview-card__platforms { font-size:var(--fs-2xs); color:var(--text-faint); }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  EXPERIENCE PREVIEW                               -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="experience-preview" aria-label="Experience preview">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-timeline" aria-hidden="true"></i> Journey</span>
+      <h2 class="section__title">💼 Experience &amp; <span class="text-gradient">Education</span></h2>
+      <p class="section__subtitle">My journey from passionate student to AI developer — every step matters.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="exp-preview__timeline" data-aos="fade-up" data-aos-delay="100">
+      <div class="exp-preview__line" aria-hidden="true"></div>
+      <div class="exp-preview__item">
+        <div class="exp-preview__dot" style="background:var(--color-success)"></div>
+        <div class="card card--glass exp-preview__card">
+          <span class="timeline-card__period"><i class="fa-solid fa-graduation-cap"></i> 2023 – Present</span>
+          <h3 class="timeline-card__role">BE Computer Engineering</h3>
+          <p class="timeline-card__company">Nepal College of Information Technology (NCIT), Pokhara University</p>
+          <p class="timeline-card__desc">Final year student specializing in AI/ML, Computer Vision, and Full Stack Development. Active in research projects and hackathons.</p>
+          <div class="tags" style="margin-top:var(--space-3)"><span class="tag tag--success">Final Year</span><span class="tag tag--primary">AI/ML Focus</span></div>
+        </div>
+      </div>
+      <div class="exp-preview__item">
+        <div class="exp-preview__dot" style="background:var(--color-primary)"></div>
+        <div class="card card--glass exp-preview__card">
+          <span class="timeline-card__period"><i class="fa-solid fa-code"></i> 2022 – Present</span>
+          <h3 class="timeline-card__role">Personal Projects &amp; Open Source</h3>
+          <p class="timeline-card__company">Self-Directed Learning &amp; Development</p>
+          <p class="timeline-card__desc">Building AI-powered applications, contributing to open source, and continuously expanding skills through hands-on project development.</p>
+          <div class="tags" style="margin-top:var(--space-3)"><span class="tag tag--primary">4 Featured Projects</span><span class="tag tag--accent">Open Source</span></div>
+        </div>
+      </div>
+      <div class="exp-preview__item">
+        <div class="exp-preview__dot" style="background:var(--color-secondary)"></div>
+        <div class="card card--glass exp-preview__card">
+          <span class="timeline-card__period"><i class="fa-solid fa-flask"></i> 2023 – Present</span>
+          <h3 class="timeline-card__role">AI Research &amp; Learning</h3>
+          <p class="timeline-card__company">Academic Research | NCIT</p>
+          <p class="timeline-card__desc">Exploring Medical AI, Computer Vision, and Edge Computing through independent research, academic projects, and online courses.</p>
+          <div class="tags" style="margin-top:var(--space-3)"><span class="tag tag--secondary">Research</span><span class="tag">Medical AI</span></div>
+        </div>
+      </div>
+      <div class="exp-preview__item">
+        <div class="exp-preview__dot" style="background:var(--color-accent)"></div>
+        <div class="card card--glass exp-preview__card" style="border:1px dashed var(--border-primary)">
+          <span class="timeline-card__period"><i class="fa-solid fa-rocket"></i> 2025 – Future</span>
+          <h3 class="timeline-card__role">Internship / Full-Time Role</h3>
+          <p class="timeline-card__company">Seeking Opportunities 🚀</p>
+          <p class="timeline-card__desc">Looking for an AI/ML or Full Stack internship or entry-level role where I can apply my skills and make a real impact. Open to remote and on-site positions.</p>
+          <div class="tags" style="margin-top:var(--space-3)"><span class="tag tag--accent">Available Now</span><span class="tag tag--success">Open to Work</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-10)" data-aos="fade-up">
+      <a href="experience.html" class="btn btn--outline btn--lg" data-transition>
+        <i class="fa-solid fa-timeline" aria-hidden="true"></i> Full Timeline
+      </a>
+    </div>
+  </div>
+  <style>
+    .exp-preview__timeline { position:relative; padding-left:clamp(24px,4vw,48px); }
+    .exp-preview__line { position:absolute; left:7px; top:0; bottom:0; width:2px; background:linear-gradient(to bottom, var(--color-success), var(--color-primary), var(--color-secondary), var(--color-accent), transparent); }
+    .exp-preview__item { position:relative; padding-bottom:var(--space-8); }
+    .exp-preview__dot { position:absolute; left:calc(-1 * clamp(24px,4vw,48px) + 2px); top:24px; width:12px; height:12px; border-radius:50%; border:2px solid var(--bg-base); box-shadow:0 0 12px currentColor; }
+    .exp-preview__card { padding:var(--space-6); }
+    @media(max-width:640px) { .exp-preview__card { padding:var(--space-4) var(--space-5); } }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  TESTIMONIALS SECTION                             -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="testimonials" aria-label="Testimonials">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-quote-left" aria-hidden="true"></i> Feedback</span>
+      <h2 class="section__title">💬 What People <span class="text-gradient">Say</span></h2>
+      <p class="section__subtitle">Kind words from peers, mentors, and collaborators.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="grid-3 testimonials__grid">
+      <div class="card card--glass testimonial-card" data-aos="fade-up" data-aos-delay="0" data-tilt>
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-card__text">Shyam is an incredibly dedicated student with a remarkable ability to grasp complex AI concepts quickly. His project work on medical AI demonstrates real-world thinking.</p>
+        <div class="testimonial-card__author">
+          <div class="avatar avatar--sm" style="background:var(--gradient-primary)">P</div>
+          <div><p class="testimonial-card__name">Professor — Placeholder</p><p class="testimonial-card__role">NCIT Faculty</p></div>
+        </div>
+      </div>
+      <div class="card card--glass testimonial-card" data-aos="fade-up" data-aos-delay="80" data-tilt>
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-card__text">Working with Shyam on our college project was a great experience. He brings creativity, technical depth, and a passion for building things that actually work.</p>
+        <div class="testimonial-card__author">
+          <div class="avatar avatar--sm" style="background:var(--gradient-accent)">C</div>
+          <div><p class="testimonial-card__name">Classmate — Placeholder</p><p class="testimonial-card__role">NCIT Student</p></div>
+        </div>
+      </div>
+      <div class="card card--glass testimonial-card" data-aos="fade-up" data-aos-delay="160" data-tilt>
+        <div class="testimonial-card__quote">"</div>
+        <p class="testimonial-card__text">Shyam's curiosity and dedication to AI research is inspiring. He always goes the extra mile to understand the fundamentals, not just the tools.</p>
+        <div class="testimonial-card__author">
+          <div class="avatar avatar--sm" style="background:var(--gradient-primary)">M</div>
+          <div><p class="testimonial-card__name">Mentor — Placeholder</p><p class="testimonial-card__role">Tech Community</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .testimonial-card { display:flex; flex-direction:column; gap:var(--space-4); padding:var(--space-6); }
+    .testimonial-card__quote { font-size:3rem; line-height:1; color:var(--color-primary); font-family:var(--font-heading); opacity:0.6; }
+    .testimonial-card__text { font-size:var(--fs-sm); color:var(--text-muted); line-height:var(--lh-relaxed); font-style:italic; flex:1; }
+    .testimonial-card__author { display:flex; align-items:center; gap:var(--space-3); margin-top:auto; padding-top:var(--space-4); border-top:1px solid var(--border-subtle); }
+    .testimonial-card__name { font-size:var(--fs-sm); font-weight:var(--fw-semibold); color:var(--text-primary); }
+    .testimonial-card__role { font-size:var(--fs-xs); color:var(--text-faint); }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  BLOG / ARTICLES SECTION                          -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="blog" aria-label="Blog and articles">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i> Writing</span>
+      <h2 class="section__title">📝 Blog &amp; <span class="text-gradient">Articles</span></h2>
+      <p class="section__subtitle">Thoughts on AI, development, research, and the tech journey from Nepal.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="grid-3 blog__grid">
+      <div class="card card--glass blog-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="blog-card__tag"><span class="tag tag--primary">AI / ML</span></div>
+        <h3 class="blog-card__title">Getting Started with Computer Vision using PyTorch</h3>
+        <p class="blog-card__desc">A beginner-friendly guide to building your first image classification model with PyTorch and CNN architectures.</p>
+        <div class="blog-card__meta"><span><i class="fa-regular fa-calendar fa-xs"></i> Available on GitHub</span><a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--ghost btn--xs">View →</a></div>
+      </div>
+      <div class="card card--glass blog-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="blog-card__tag"><span class="tag tag--secondary">Research</span></div>
+        <h3 class="blog-card__title">Medical AI for Rural Nepal: Challenges &amp; Opportunities</h3>
+        <p class="blog-card__desc">Exploring how AI can bridge the healthcare gap in rural communities and the technical challenges involved.</p>
+        <div class="blog-card__meta"><span><i class="fa-regular fa-calendar fa-xs"></i> Available on GitHub</span><a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--ghost btn--xs">View →</a></div>
+      </div>
+      <div class="card card--glass blog-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="blog-card__tag"><span class="tag tag--accent">Tutorial</span></div>
+        <h3 class="blog-card__title">Building a Full Stack App with FastAPI and Flutter</h3>
+        <p class="blog-card__desc">Step-by-step guide to building a complete mobile application with FastAPI backend and Flutter frontend.</p>
+        <div class="blog-card__meta"><span><i class="fa-regular fa-calendar fa-xs"></i> Coming Soon</span><a href="#" class="btn btn--ghost btn--xs">Read →</a></div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .blog-card { display:flex; flex-direction:column; gap:var(--space-3); padding:var(--space-6); }
+    .blog-card__title { font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); line-height:var(--lh-snug); }
+    .blog-card__desc { font-size:var(--fs-xs); color:var(--text-muted); line-height:var(--lh-relaxed); flex:1; }
+    .blog-card__meta { display:flex; align-items:center; justify-content:space-between; font-size:var(--fs-xs); color:var(--text-faint); margin-top:auto; padding-top:var(--space-3); border-top:1px solid var(--border-subtle); }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  FAQ SECTION                                      -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="faq" aria-label="FAQ">
+  <div class="container">
+    <div class="section__header" data-aos="fade-up">
+      <span class="eyebrow"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> FAQ</span>
+      <h2 class="section__title">❓ Frequently Asked <span class="text-gradient">Questions</span></h2>
+      <p class="section__subtitle">Answers to things people often ask me about.</p>
+      <div class="divider"></div>
+    </div>
+    <div class="faq__list" data-aos="fade-up" data-aos-delay="100">
+      <details class="faq__item card card--glass">
+        <summary class="faq__question"><span>🎓 What are you currently studying?</span><i class="fa-solid fa-chevron-down faq__chevron"></i></summary>
+        <p class="faq__answer">I'm a final-year BE Computer Engineering student at Nepal College of Information Technology (NCIT), affiliated with Pokhara University in Kathmandu, Nepal. My focus is on AI/ML, Computer Vision, and Full Stack Development.</p>
+      </details>
+      <details class="faq__item card card--glass">
+        <summary class="faq__question"><span>💼 Are you open to internships or jobs?</span><i class="fa-solid fa-chevron-down faq__chevron"></i></summary>
+        <p class="faq__answer">Absolutely! I'm actively looking for internship opportunities, freelance projects, and full-time roles in AI/ML engineering, Full Stack Development, or Computer Vision. I'm open to both remote and on-site positions.</p>
+      </details>
+      <details class="faq__item card card--glass">
+        <summary class="faq__question"><span>🤖 What's your main area of interest in AI?</span><i class="fa-solid fa-chevron-down faq__chevron"></i></summary>
+        <p class="faq__answer">My primary passion is Medical AI — specifically, building AI systems that can help diagnose diseases and provide healthcare guidance in rural and resource-limited settings. I'm also deeply interested in Computer Vision, Deep Learning, and Edge AI.</p>
+      </details>
+      <details class="faq__item card card--glass">
+        <summary class="faq__question"><span>🌐 Can you work with international clients/teams?</span><i class="fa-solid fa-chevron-down faq__chevron"></i></summary>
+        <p class="faq__answer">Yes! I'm comfortable working remotely with international teams and clients. I communicate clearly in English and I'm used to asynchronous collaboration across time zones.</p>
+      </details>
+      <details class="faq__item card card--glass">
+        <summary class="faq__question"><span>⚡ How quickly do you learn new technologies?</span><i class="fa-solid fa-chevron-down faq__chevron"></i></summary>
+        <p class="faq__answer">I'm a fast learner by nature. I've picked up frameworks, tools, and new domains quickly throughout my projects. I believe in understanding fundamentals deeply, which makes adapting to new technologies much easier.</p>
+      </details>
+      <details class="faq__item card card--glass">
+        <summary class="faq__question"><span>📧 How can I contact you?</span><i class="fa-solid fa-chevron-down faq__chevron"></i></summary>
+        <p class="faq__answer">The best way to reach me is via email at <a href="mailto:shyamkishrsah@gmail.com" style="color:var(--color-primary-light)">shyamkishrsah@gmail.com</a>. You can also connect on LinkedIn or GitHub. I typically respond within 24 hours.</p>
+      </details>
+    </div>
+  </div>
+  <style>
+    .faq__list { max-width:800px; margin-inline:auto; display:flex; flex-direction:column; gap:var(--space-3); }
+    .faq__item { padding:0; overflow:hidden; }
+    .faq__question { display:flex; align-items:center; justify-content:space-between; padding:var(--space-5) var(--space-6); cursor:pointer; list-style:none; font-size:var(--fs-base); font-weight:var(--fw-semibold); color:var(--text-primary); user-select:none; gap:var(--space-4); }
+    .faq__question::-webkit-details-marker { display:none; }
+    .faq__question:hover { color:var(--color-primary-light); }
+    .faq__chevron { flex-shrink:0; font-size:var(--fs-xs); color:var(--text-muted); transition:transform var(--duration-base) var(--ease-in-out); }
+    details[open] .faq__chevron { transform:rotate(180deg); color:var(--color-primary); }
+    .faq__answer { padding:0 var(--space-6) var(--space-5); font-size:var(--fs-sm); color:var(--text-muted); line-height:var(--lh-relaxed); border-top:1px solid var(--border-subtle); padding-top:var(--space-4); }
+  </style>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!--  CTA SECTION                                      -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section cta-section" id="cta" aria-label="Call to action">
+  <div class="container">
+    <div class="cta-card card card--glass" data-aos="zoom-in">
+      <div class="cta-card__glow" aria-hidden="true"></div>
+      <span style="font-size:3.5rem;display:block;margin-bottom:var(--space-4)">🤝</span>
+      <h2 class="section__title">Let's Build Something <span class="text-gradient">Amazing Together</span></h2>
+      <p class="section__subtitle" style="margin-top:var(--space-4)">
+        I'm a final-year BE Computer Engineering student from Nepal, passionate about AI and building impactful products.
+        Whether it's a collaboration, internship, or just a conversation — I'd love to connect.
+      </p>
+      <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;margin-top:var(--space-8)">
+        <a href="contact.html" class="btn btn--gradient btn--lg magnetic" data-transition>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Let's Talk
+        </a>
+        <a href="assets/resume/resume.png" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download Resume
+        </a>
+        <a href="projects.html" class="btn btn--outline btn--lg" data-transition>
+          <i class="fa-solid fa-rocket" aria-hidden="true"></i> View Projects
+        </a>
+      </div>
+      <!-- Social row in CTA -->
+      <div style="display:flex;gap:var(--space-3);justify-content:center;margin-top:var(--space-8)">
+        <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shyamkishorsah789/" target="_blank" rel="noopener" class="btn btn--social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/@ShyamKishorSah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/shyamkishorsah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/ShyamKishorSah650" target="_blank" rel="noopener" class="btn btn--social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="mailto:shyamkishrsah@gmail.com" class="btn btn--social" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+  <style>
+    .cta-card { text-align:center; padding:clamp(40px,6vw,80px); position:relative; overflow:hidden; }
+    .cta-card__glow { position:absolute; inset:0; background:var(--gradient-hero); pointer-events:none; }
+  </style>
+</section>
+
+</main><!-- /#page-wrapper -->
+
+<!-- ════════════════════════════════════════════════════ -->
+<!--  FOOTER                                             -->
+<!-- ════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo" aria-label="Site footer">
+  <div class="gradient-line" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" aria-label="Shyam home">
+          <div class="navbar__logo-mark">S</div>
+          <span class="navbar__logo-text">Shyam</span>
+        </a>
+        <p class="footer__brand-desc">
+          Full Stack Developer &amp; AI/ML Enthusiast from Nepal 🇳🇵. Final year BE Computer Engineering at NCIT, Pokhara University.
+        </p>
+        <div class="footer__social" aria-label="Social links">
+          <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shyamkishorsah789/" target="_blank" rel="noopener" class="btn btn--social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@ShyamKishorSah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/shyamkishorsah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ShyamKishorSah650" target="_blank" rel="noopener" class="btn btn--social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">Navigate</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="index.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Home</a></li>
+          <li><a href="index.html#about" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>About</a></li>
+          <li><a href="index.html#skills" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Skills</a></li>
+          <li><a href="projects.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Projects</a></li>
+          <li><a href="experience.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Experience</a></li>
+          <li><a href="gallery.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">Explore</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="certificates.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Certificates</a></li>
+          <li><a href="contact.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Contact</a></li>
+          <li><a href="index.html#research" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Research</a></li>
+          <li><a href="index.html#blog" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Blog</a></li>
+          <li><a href="assets/resume/resume.png" target="_blank" rel="noopener" class="footer__link"><i class="fa-solid fa-file-pdf fa-xs"></i>Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">📧 Contact</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="mailto:shyamkishrsah@gmail.com" class="footer__link"><i class="fa-solid fa-envelope fa-xs"></i>shyamkishrsah@gmail.com</a></li>
+          <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-location-dot fa-xs"></i>Balkumari, Lalitpur, Nepal 🇳🇵</span></li>
+          <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-circle fa-xs" style="color:var(--color-success)"></i>Available for opportunities</span></li>
+          <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-university fa-xs"></i>NCIT, Pokhara University</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; <span id="footer-year">2025</span> Shyam Kishor Sah. Crafted with <span style="color:var(--color-danger)">❤️</span> in Nepal 🇳🇵</p>
+      <a href="#home" class="footer__back-top" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!--  SCRIPTS                                            -->
+<!-- ════════════════════════════════════════════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/three-bg.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Typed.js — hero roles
+    if (window.initTyped) {
+      window.initTyped('#hero-typed', [
+        'Full Stack Developer 💻',
+        'AI/ML Enthusiast 🤖',
+        'AI/ML Researcher 🔬',
+        'Computer Vision Engineer 📷',
+        'Robotics Enthusiast 🦾',
+        'Deep Learning Developer 🌊',
+        'Problem Solver 🧩',
+      ]);
+    }
+
+    // Generate GitHub contribution grid placeholder
+    const grid = document.querySelector('.github__contrib-grid');
+    if (grid) {
+      let html = '';
+      for (let i = 0; i < 364; i++) {
+        const intensity = Math.random();
+        let bg = 'rgba(255,255,255,0.04)';
+        if (intensity > 0.85) bg = 'rgba(37,99,235,0.9)';
+        else if (intensity > 0.7) bg = 'rgba(37,99,235,0.6)';
+        else if (intensity > 0.5) bg = 'rgba(37,99,235,0.35)';
+        else if (intensity > 0.3) bg = 'rgba(37,99,235,0.15)';
+        html += `<div style="aspect-ratio:1;border-radius:2px;background:${bg}"></div>`;
+      }
+      grid.innerHTML = html;
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="28" fill="#07111f"/>
+  <rect x="90" y="95" width="620" height="310" rx="24" fill="#0f172a" stroke="#2563eb" stroke-width="2"/>
+  <rect x="145" y="150" width="180" height="120" rx="18" fill="#1d4ed8" opacity="0.85"/>
+  <rect x="360" y="155" width="250" height="180" rx="20" fill="#7c3aed" opacity="0.78"/>
+  <circle cx="240" cy="315" r="60" fill="#0ea5e9" opacity="0.9"/>
+  <path d="M220 295h40v40h40v40h-40v40h-40v-40h-40v-40h40z" fill="#f8fafc"/>
+  <text x="400" y="435" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#f8fafc">AI Healthcare Assistant</text>
+</svg>

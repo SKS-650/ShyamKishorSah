@@ -1,0 +1,263 @@
+/* ============================================================
+   ANIMATIONS — Keyframes, Transitions, Motion System
+   Portfolio | AI Engineer & Full Stack Developer
+   ============================================================ */
+
+/* ── Blob Float ──────────────────────────────────────────── */
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25%       { transform: translate(3%, 5%) scale(1.04); }
+  50%       { transform: translate(-2%, 8%) scale(0.97); }
+  75%       { transform: translate(5%, -3%) scale(1.02); }
+}
+
+/* ── Loader Progress ─────────────────────────────────────── */
+@keyframes loaderProgress {
+  0%   { width: 0%; }
+  60%  { width: 75%; }
+  80%  { width: 88%; }
+  100% { width: 100%; }
+}
+
+/* ── Gradient Shift ──────────────────────────────────────── */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Pulse ───────────────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
+}
+
+/* ── Ping ────────────────────────────────────────────────── */
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+/* ── Spin ────────────────────────────────────────────────── */
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Float (elements that hover in place) ────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-18px) rotate(3deg); }
+}
+
+/* ── Fade In Variants ────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Slide ───────────────────────────────────────────────── */
+@keyframes slideInUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+
+/* ── Scale Reveal ────────────────────────────────────────── */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scaleInSpring {
+  0%   { opacity: 0; transform: scale(0.7); }
+  70%  { transform: scale(1.04); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ── Rotate In ───────────────────────────────────────────── */
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate(-20deg) scale(0.9); }
+  to   { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+/* ── Reveal (clip-path text reveal) ─────────────────────── */
+@keyframes revealUp {
+  from { clip-path: inset(100% 0 0 0); transform: translateY(100%); }
+  to   { clip-path: inset(0% 0 0 0); transform: translateY(0); }
+}
+
+/* ── Shimmer (card / skeleton) ───────────────────────────── */
+@keyframes shimmer {
+  from { background-position: -200% center; }
+  to   { background-position: 200% center; }
+}
+
+@keyframes progressShimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* ── Glow Pulse ──────────────────────────────────────────── */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(37,99,235,0.2); }
+  50%       { box-shadow: 0 0 50px rgba(37,99,235,0.5), 0 0 80px rgba(37,99,235,0.2); }
+}
+
+@keyframes glowPulseSecondary {
+  0%, 100% { box-shadow: 0 0 20px rgba(124,58,237,0.2); }
+  50%       { box-shadow: 0 0 50px rgba(124,58,237,0.5); }
+}
+
+/* ── Typing Cursor ───────────────────────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Orbit (3D ring decoration) ─────────────────────────── */
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+
+/* ── Morph Border ────────────────────────────────────────── */
+@keyframes morphBorder {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  25%       { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  50%       { border-radius: 50% 60% 30% 60% / 40% 70% 60% 30%; }
+  75%       { border-radius: 70% 30% 50% 60% / 30% 50% 70% 50%; }
+}
+
+/* ── Text Gradient Animate ───────────────────────────────── */
+@keyframes textGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ── Page Transition ─────────────────────────────────────── */
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Waving Hand ─────────────────────────────────────────── */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  15%       { transform: rotate(14deg); }
+  30%       { transform: rotate(-8deg); }
+  45%       { transform: rotate(14deg); }
+  60%       { transform: rotate(-4deg); }
+  75%       { transform: rotate(10deg); }
+}
+
+/* ── ANIMATION UTILITY CLASSES ───────────────────────────── */
+.animate-fadeIn       { animation: fadeIn       var(--duration-slow) var(--ease-out) both; }
+.animate-fadeInUp     { animation: fadeInUp     var(--duration-slow) var(--ease-out) both; }
+.animate-fadeInDown   { animation: fadeInDown   var(--duration-slow) var(--ease-out) both; }
+.animate-fadeInLeft   { animation: fadeInLeft   var(--duration-slow) var(--ease-out) both; }
+.animate-fadeInRight  { animation: fadeInRight  var(--duration-slow) var(--ease-out) both; }
+.animate-scaleIn      { animation: scaleIn      var(--duration-slow) var(--ease-spring) both; }
+.animate-float        { animation: float        4s ease-in-out infinite; }
+.animate-floatSlow    { animation: floatSlow    6s ease-in-out infinite; }
+.animate-spin         { animation: spin         1.2s linear infinite; }
+.animate-pulse        { animation: pulse        2s ease-in-out infinite; }
+.animate-glow         { animation: glowPulse    3s ease-in-out infinite; }
+.animate-wave         { animation: wave         2s ease-in-out infinite; display: inline-block; }
+
+/* Delay utilities */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+
+/* ── AOS Custom Overrides ────────────────────────────────── */
+[data-aos] { transition-timing-function: var(--ease-out) !important; }
+
+[data-aos="fade-up-custom"] {
+  transform: translate3d(0, 40px, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos="fade-up-custom"].aos-animate {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* ── Hover Effects ───────────────────────────────────────── */
+.hover-lift  { transition: transform var(--duration-base) var(--ease-spring); }
+.hover-lift:hover { transform: translateY(-6px); }
+
+.hover-scale { transition: transform var(--duration-base) var(--ease-spring); }
+.hover-scale:hover { transform: scale(1.05); }
+
+.hover-glow  { transition: box-shadow var(--duration-base) var(--ease-in-out); }
+.hover-glow:hover { box-shadow: var(--shadow-glow-primary); }
+
+/* ── Mouse Glow Follower (applied via JS) ────────────────── */
+.mouse-glow {
+  position: fixed;
+  pointer-events: none;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: opacity var(--duration-slow) var(--ease-in-out);
+  will-change: transform;
+}
+
+/* ── Magnetic Button Wrapper ─────────────────────────────── */
+.magnetic { transition: transform var(--duration-base) var(--ease-out); }
+
+/* ── Skeleton Loading ────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg,
+    var(--bg-card) 25%,
+    var(--bg-card-hover) 50%,
+    var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s linear infinite;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ── Section Reveal (GSAP targets) ──────────────────────── */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.reveal-hidden--left  { transform: translateX(-40px); }
+.reveal-hidden--right { transform: translateX(40px); }
+.reveal-hidden--scale { transform: scale(0.9); }

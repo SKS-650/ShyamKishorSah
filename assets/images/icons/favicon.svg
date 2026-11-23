@@ -1,4 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#0f172a"/>
-  <path d="M18 18h10l8 18 8-18h10l-14 28h-8z" fill="#60a5fa"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0a1e"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="50%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="dot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+
+  <!-- Subtle inner glow border -->
+  <rect width="64" height="64" rx="14" fill="none"
+        stroke="url(#txt)" stroke-width="1.2" opacity="0.35"/>
+
+  <!-- "S" initial — large, bold, gradient -->
+  <text x="32" y="45"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-size="38"
+        font-weight="700"
+        font-style="italic"
+        fill="url(#txt)"
+        text-anchor="middle"
+        filter="url(#glow)">S</text>
+
+  <!-- Decorative dot accent bottom-right -->
+  <circle cx="50" cy="50" r="4" fill="url(#dot)" opacity="0.9"/>
+
+  <!-- Thin underline accent beneath the S -->
+  <line x1="18" y1="50" x2="43" y2="50"
+        stroke="url(#txt)" stroke-width="1.5"
+        stroke-linecap="round" opacity="0.6"/>
 </svg>

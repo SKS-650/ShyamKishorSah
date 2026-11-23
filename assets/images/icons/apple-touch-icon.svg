@@ -1,4 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect width="180" height="180" rx="40" fill="#0f172a"/>
-  <path d="M54 54h28l20 44 20-44h28l-38 76h-20z" fill="#60a5fa"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="100%" style="stop-color:#0f0a1e"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="50%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="dot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="180" height="180" rx="38" fill="url(#bg)"/>
+
+  <!-- Subtle radial glow centre -->
+  <circle cx="90" cy="85" r="70" fill="#7c3aed" opacity="0.07"/>
+
+  <!-- Border ring -->
+  <rect width="180" height="180" rx="38" fill="none"
+        stroke="url(#txt)" stroke-width="2" opacity="0.3"/>
+
+  <!-- Large stylish S — serif italic -->
+  <text x="90" y="108"
+        font-family="'Georgia', 'Palatino', 'Times New Roman', serif"
+        font-size="88"
+        font-weight="700"
+        font-style="italic"
+        fill="url(#txt)"
+        text-anchor="middle"
+        filter="url(#glow)">S</text>
+
+  <!-- Thin gradient underline bar -->
+  <rect x="30" y="122" width="88" height="3" rx="2"
+        fill="url(#accent)" opacity="0.75"/>
+
+  <!-- "hyam" subscript text — small, elegant -->
+  <text x="90" y="148"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-size="22"
+        font-weight="400"
+        font-style="italic"
+        letter-spacing="6"
+        fill="url(#txt)"
+        text-anchor="middle"
+        opacity="0.7">hyam</text>
+
+  <!-- Decorative dot accent top-right -->
+  <circle cx="148" cy="38" r="8" fill="url(#dot)"
+          opacity="0.85" filter="url(#softglow)"/>
+
+  <!-- Small corner dots for style -->
+  <circle cx="34" cy="148" r="3" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="148" cy="148" r="3" fill="#60a5fa" opacity="0.5"/>
 </svg>

@@ -3,27 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Shyam Kishor Sah — Full Stack Developer & AI/ML Enthusiast</title>
-  <meta name="description" content="Visual diary of Shyam Kishor Sah — hackathons, events, college life, projects, and moments from the journey of an AI engineer in Nepal." />
-  <meta name="keywords"    content="Gallery, Hackathon, Events, AI Engineer, Nepal, NCIT, Portfolio Photos, Shyam Kishor Sah" />
-  <meta name="author"      content="Shyam Kishor Sah" />
-  <meta name="robots"      content="index, follow" />
-  <link rel="canonical"    href="https://yourportfolio.com/gallery.html" />
-
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://yourportfolio.com/gallery.html" />
-  <meta property="og:title"       content="Gallery | Shyam — AI Engineer & Full Stack Developer" />
+  <title>Gallery | Shyam Kishor Sah &mdash; Full Stack Developer &amp; AI/ML Enthusiast</title>
+  <meta name="description" content="Visual diary of Shyam Kishor Sah &mdash; hackathons, events, college life, projects, and moments from the journey of an AI/ML engineer in Nepal." />
+  <meta name="keywords" content="Gallery, Hackathon, Events, AI Engineer, Nepal, NCIT, Portfolio Photos, Shyam Kishor Sah" />
+  <meta name="author" content="Shyam Kishor Sah" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourportfolio.com/gallery.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourportfolio.com/gallery.html" />
+  <meta property="og:title" content="Gallery | Shyam Kishor Sah" />
   <meta property="og:description" content="Moments from hackathons, events, projects, and life behind the screen." />
-  <meta property="og:image"       content="assets/images/profile/og-image.svg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Gallery | Shyam — AI Engineer & Full Stack Developer" />
+  <meta property="og:image" content="assets/images/profile/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery | Shyam Kishor Sah" />
   <meta name="twitter:description" content="Moments from hackathons, events, projects, and life behind the screen." />
-  <meta name="twitter:image"       content="assets/images/profile/og-image.svg" />
-  <link rel="icon"             href="assets/images/icons/favicon.svg" />
-  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.svg" />
+  <meta name="twitter:image" content="assets/images/profile/og-image.jpg" />
+  <link rel="icon" href="assets/images/icons/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -35,31 +31,26 @@
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
-  <script>(function(){const t=localStorage.getItem('portfolio-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()</script>
+  <script>(function(){var t=localStorage.getItem('portfolio-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');})()</script>
 </head>
 <body class="loading">
 
-<!-- ── Page Transition Overlay ─────────────────────────────── -->
 <div class="page-transition" aria-hidden="true"></div>
-
-<!-- ── Page Loader ─────────────────────────────────────────── -->
 <div id="page-loader" aria-hidden="true">
   <div class="loader__logo">S.</div>
   <div class="loader__bar"><div class="loader__progress"></div></div>
   <span class="loader__text">Loading Gallery</span>
 </div>
 <div id="scroll-progress" aria-hidden="true"></div>
-
-<!-- ── Background Layers ──────────────────────────────────── -->
-<canvas id="bg-canvas"        aria-hidden="true"></canvas>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
 <canvas id="particles-canvas" aria-hidden="true"></canvas>
-<div class="bg-blobs"         aria-hidden="true">
+<div class="bg-blobs" aria-hidden="true">
   <div class="bg-blob bg-blob--1"></div>
   <div class="bg-blob bg-blob--2"></div>
   <div class="bg-blob bg-blob--3"></div>
 </div>
 <div class="light-rays" aria-hidden="true"></div>
-<div class="bg-noise"   aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
 
 <!-- NAVBAR -->
 <header class="navbar" role="banner">
@@ -69,20 +60,21 @@
       <span class="navbar__logo-text">Shyam</span>
     </a>
     <nav class="navbar__nav" role="navigation" aria-label="Primary navigation">
-      <a href="index.html"        class="navbar__link">🏠 Home</a>
-      <a href="index.html#about"  class="navbar__link">👤 About</a>
-      <a href="projects.html"     class="navbar__link">🚀 Projects</a>
-      <a href="certificates.html" class="navbar__link">📜 Certificates</a>
-      <a href="experience.html"   class="navbar__link">💼 Experience</a>
-      <a href="gallery.html"      class="navbar__link active" aria-current="page">🖼️ Gallery</a>
-      <a href="contact.html"      class="navbar__link">📧 Contact</a>
+      <a href="index.html"        class="navbar__link" data-transition>&#x1F3E0; Home</a>
+      <a href="index.html#about"  class="navbar__link" data-transition>&#x1F464; About</a>
+      <a href="index.html#skills" class="navbar__link" data-transition>&#x1F9E0; Skills</a>
+      <a href="projects.html"     class="navbar__link" data-transition>&#x1F680; Projects</a>
+      <a href="certificates.html" class="navbar__link" data-transition>&#x1F4DC; Certificates</a>
+      <a href="experience.html"   class="navbar__link" data-transition>&#x1F4BC; Experience</a>
+      <a href="gallery.html"      class="navbar__link active" aria-current="page">&#x1F5BC;&#xFE0F; Gallery</a>
+      <a href="contact.html"      class="navbar__link" data-transition>&#x1F4E7; Contact</a>
     </nav>
     <div class="navbar__actions">
       <button class="btn btn--ghost btn--icon" data-theme-toggle aria-label="Toggle theme">
-        <i class="fa-solid fa-sun  theme-icon--light"></i>
-        <i class="fa-solid fa-moon theme-icon--dark hidden"></i>
+        <i class="fa-solid fa-sun  theme-icon--light" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon theme-icon--dark hidden" aria-hidden="true"></i>
       </button>
-      <a href="assets/resume/resume.png" target="_blank" rel="noopener" download="Shyam-Kishor-Sah-Resume.png" class="btn btn--resume">
+      <a href="assets/resume/resume.pdf" target="_blank" rel="noopener" class="btn btn--resume">
         <i class="fa-solid fa-download"></i> Resume
       </a>
       <button class="navbar__hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -91,15 +83,15 @@
     </div>
   </div>
   <nav class="navbar__mobile" aria-label="Mobile navigation">
-    <a href="index.html"        class="navbar__link">🏠 Home</a>
-    <a href="index.html#about"  class="navbar__link">👤 About</a>
-    <a href="index.html#skills" class="navbar__link">🧠 Skills</a>
-    <a href="projects.html"     class="navbar__link">🚀 Projects</a>
-    <a href="certificates.html" class="navbar__link">📜 Certificates</a>
-    <a href="experience.html"   class="navbar__link">💼 Experience</a>
-    <a href="gallery.html"      class="navbar__link active">🖼️ Gallery</a>
-    <a href="contact.html"      class="navbar__link">📧 Contact</a>
-    <a href="assets/resume/resume.png" target="_blank" rel="noopener"
+    <a href="index.html"        class="navbar__link">&#x1F3E0; Home</a>
+    <a href="index.html#about"  class="navbar__link">&#x1F464; About</a>
+    <a href="index.html#skills" class="navbar__link">&#x1F9E0; Skills</a>
+    <a href="projects.html"     class="navbar__link">&#x1F680; Projects</a>
+    <a href="certificates.html" class="navbar__link">&#x1F4DC; Certificates</a>
+    <a href="experience.html"   class="navbar__link">&#x1F4BC; Experience</a>
+    <a href="gallery.html"      class="navbar__link active">&#x1F5BC;&#xFE0F; Gallery</a>
+    <a href="contact.html"      class="navbar__link">&#x1F4E7; Contact</a>
+    <a href="assets/resume/resume.pdf" target="_blank" rel="noopener"
        class="btn btn--primary btn--sm" style="margin-top:8px">
       <i class="fa-solid fa-download"></i> Download Resume
     </a>
@@ -111,9 +103,11 @@
   <!-- Page Hero -->
   <section class="section" style="padding-top:calc(var(--navbar-height) + var(--space-16));text-align:center" aria-label="Gallery hero">
     <div class="container">
-      <span class="eyebrow" data-aos="fade-up"><i class="fa-solid fa-images"></i> Visual Diary</span>
+      <span class="eyebrow" data-aos="fade-up">
+        <i class="fa-solid fa-camera" aria-hidden="true"></i> Visual Diary
+      </span>
       <h1 class="section__title" data-aos="fade-up" data-aos-delay="100">
-        🖼️ My <span class="text-gradient">Gallery</span>
+        <i class="fa-solid fa-images" aria-hidden="true"></i> My <span class="text-gradient">Gallery</span>
       </h1>
       <p class="section__subtitle" style="margin-inline:auto" data-aos="fade-up" data-aos-delay="200">
         Moments from hackathons, events, projects, and life behind the screen.
@@ -123,22 +117,22 @@
       <!-- Gallery Stats -->
       <div style="display:flex;gap:var(--space-6);justify-content:center;margin-top:var(--space-10);flex-wrap:wrap" data-aos="fade-up" data-aos-delay="400">
         <div class="card card--stat" style="min-width:140px;flex:1;max-width:160px" data-tilt>
-          <span style="font-size:1.8rem">📸</span>
-          <span class="card__stat-number" data-counter="12" data-counter-suffix="">12</span>
+          <i class="fa-solid fa-camera" style="font-size:1.8rem;color:var(--color-primary)"></i>
+          <span class="card__stat-number" data-counter="29" data-counter-suffix="+">0+</span>
           <span class="card__stat-label">Photos</span>
         </div>
         <div class="card card--stat" style="min-width:140px;flex:1;max-width:160px" data-tilt>
-          <span style="font-size:1.8rem">🏆</span>
-          <span class="card__stat-number" data-counter="4" data-counter-suffix="">4</span>
+          <i class="fa-solid fa-trophy" style="font-size:1.8rem;color:var(--color-secondary)"></i>
+          <span class="card__stat-number" data-counter="8" data-counter-suffix="+">0+</span>
           <span class="card__stat-label">Events</span>
         </div>
         <div class="card card--stat" style="min-width:140px;flex:1;max-width:160px" data-tilt>
-          <span style="font-size:1.8rem">🎯</span>
-          <span class="card__stat-number" data-counter="2" data-counter-suffix="">2</span>
+          <i class="fa-solid fa-code" style="font-size:1.8rem;color:var(--color-accent)"></i>
+          <span class="card__stat-number" data-counter="2" data-counter-suffix="+">0+</span>
           <span class="card__stat-label">Hackathons</span>
         </div>
         <div class="card card--stat" style="min-width:140px;flex:1;max-width:160px" data-tilt>
-          <span style="font-size:1.8rem">🇳🇵</span>
+          <i class="fa-solid fa-location-dot" style="font-size:1.8rem;color:var(--color-success)"></i>
           <span class="card__stat-number">1</span>
           <span class="card__stat-label">Country</span>
         </div>
@@ -152,57 +146,78 @@
       <div class="section-title-wrap" data-aos="fade-up">
         <span class="eyebrow"><i class="fa-solid fa-star"></i> Featured</span>
         <h2 style="font-size:var(--fs-3xl);font-family:var(--font-heading);font-weight:var(--fw-bold)">
-          ✨ Highlights
+          Highlights
         </h2>
       </div>
 
       <div class="swiper gallery-hero-swiper" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper-wrapper">
+
           <div class="swiper-slide">
-            <div class="gallery-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative;background:var(--bg-elevated)">
-              <img src="assets/images/Gallery/AIHackathonTeam.jpg" alt="Hackathon team photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-              <div style="position:absolute;inset:auto 0 0 0;padding:var(--space-5);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.75) 100%);color:#fff">
-                <span class="eyebrow" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px)">🏆 Hackathon</span>
-                <h3 style="margin-top:var(--space-2);font-size:var(--fs-xl);font-weight:var(--fw-bold)">Team spirit in action</h3>
+            <div class="gallery-featured-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative">
+              <img src="assets/images/Gallery/SpecialEvent-TedxNCIT.jpg"
+                   alt="TEDx NCIT Event" loading="lazy"
+                   style="width:100%;height:400px;object-fit:cover;display:block"
+                   onerror="this.parentElement.classList.add('gallery-slide-ph');this.style.display='none'"/>
+              <div class="gallery-slide-label">
+                <span class="gallery-slide-label__tag"><i class="fa-solid fa-microphone"></i> TEDx</span>
+                <span class="gallery-slide-label__title">TEDx NCIT</span>
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="gallery-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative;background:var(--bg-elevated)">
-              <img src="assets/images/Gallery/NationalAIHackathon26.jpg" alt="National AI Hackathon photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-              <div style="position:absolute;inset:auto 0 0 0;padding:var(--space-5);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.75) 100%);color:#fff">
-                <span class="eyebrow" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px)">🤖 National AI Hackathon</span>
-                <h3 style="margin-top:var(--space-2);font-size:var(--fs-xl);font-weight:var(--fw-bold)">Building ideas with impact</h3>
+            <div class="gallery-featured-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative">
+              <img src="assets/images/Gallery/AIHackathonTeam.jpg"
+                   alt="National AI Hackathon 2026 Team" loading="lazy"
+                   style="width:100%;height:400px;object-fit:cover;display:block"
+                   onerror="this.parentElement.classList.add('gallery-slide-ph');this.style.display='none'"/>
+              <div class="gallery-slide-label">
+                <span class="gallery-slide-label__tag"><i class="fa-solid fa-trophy"></i> Hackathon</span>
+                <span class="gallery-slide-label__title">National AI Hackathon 2026 &mdash; Team</span>
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="gallery-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative;background:var(--bg-elevated)">
-              <img src="assets/images/Gallery/UniversityTopper.JPG" alt="University topper recognition" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-              <div style="position:absolute;inset:auto 0 0 0;padding:var(--space-5);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.75) 100%);color:#fff">
-                <span class="eyebrow" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px)">🎓 Academic milestone</span>
-                <h3 style="margin-top:var(--space-2);font-size:var(--fs-xl);font-weight:var(--fw-bold)">A proud moment of achievement</h3>
+            <div class="gallery-featured-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative">
+              <img src="assets/images/Gallery/SpecialEvent-MinorProject.jpg"
+                   alt="Minor Project Showcase" loading="lazy"
+                   style="width:100%;height:400px;object-fit:cover;display:block"
+                   onerror="this.parentElement.classList.add('gallery-slide-ph');this.style.display='none'"/>
+              <div class="gallery-slide-label">
+                <span class="gallery-slide-label__tag"><i class="fa-solid fa-laptop-code"></i> Project</span>
+                <span class="gallery-slide-label__title">Minor Project Showcase</span>
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="gallery-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative;background:var(--bg-elevated)">
-              <img src="assets/images/Gallery/FewaLake.jpg" alt="Fewa lake travel photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-              <div style="position:absolute;inset:auto 0 0 0;padding:var(--space-5);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.75) 100%);color:#fff">
-                <span class="eyebrow" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px)">🌍 Travel</span>
-                <h3 style="margin-top:var(--space-2);font-size:var(--fs-xl);font-weight:var(--fw-bold)">Moments beyond the screen</h3>
+            <div class="gallery-featured-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative">
+              <img src="assets/images/Gallery/NationalAIHackathon26.jpg"
+                   alt="National AI Hackathon 2026" loading="lazy"
+                   style="width:100%;height:400px;object-fit:cover;display:block"
+                   onerror="this.parentElement.classList.add('gallery-slide-ph');this.style.display='none'"/>
+              <div class="gallery-slide-label">
+                <span class="gallery-slide-label__tag"><i class="fa-solid fa-robot"></i> AI Event</span>
+                <span class="gallery-slide-label__title">National AI Hackathon 2026</span>
               </div>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="gallery-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative;background:var(--bg-elevated)">
-              <img src="assets/images/Gallery/SmartHomeAutomation.png" alt="Smart home automation project" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-              <div style="position:absolute;inset:auto 0 0 0;padding:var(--space-5);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.75) 100%);color:#fff">
-                <span class="eyebrow" style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px)">💡 Project</span>
-                <h3 style="margin-top:var(--space-2);font-size:var(--fs-xl);font-weight:var(--fw-bold)">Turning ideas into working systems</h3>
+            <div class="gallery-featured-slide" style="min-height:400px;border-radius:var(--border-radius-xl);overflow:hidden;position:relative">
+              <img src="assets/images/Gallery/FewaLake.jpg"
+                   alt="Fewa Lake Pokhara Nepal" loading="lazy"
+                   style="width:100%;height:400px;object-fit:cover;display:block"
+                   onerror="this.parentElement.classList.add('gallery-slide-ph');this.style.display='none'"/>
+              <div class="gallery-slide-label">
+                <span class="gallery-slide-label__tag"><i class="fa-solid fa-mountain"></i> Nepal</span>
+                <span class="gallery-slide-label__title">Fewa Lake, Pokhara</span>
               </div>
             </div>
           </div>
+
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -211,154 +226,557 @@
     </div>
   </section>
 
-  <!-- Masonry Grid (filter tabs) -->
+  <!-- Masonry Grid -->
   <section class="section" style="padding-top:var(--space-8)" aria-label="Gallery grid">
     <div class="container">
+
+      <!-- Filter Tabs -->
       <div class="gallery-filters" data-aos="fade-up">
-        <button class="btn btn--glow  btn--sm gallery-filter active" data-filter="all">All</button>
-        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="events">🎉 Events</button>
-        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="work">💻 Work</button>
-        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="travel">🌍 Travel</button>
-        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="personal">😊 Personal</button>
+        <button class="btn btn--glow  btn--sm gallery-filter active" data-filter="all">
+          <i class="fa-solid fa-border-all fa-xs"></i> All
+        </button>
+        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="events">
+          &#x1F3C5; Events
+        </button>
+        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="work">
+          &#x1F4BB; Work
+        </button>
+        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="travel">
+          <i class="fa-solid fa-map-pin fa-xs"></i> Travel
+        </button>
+        <button class="btn btn--ghost btn--sm gallery-filter" data-filter="personal">
+          <i class="fa-solid fa-heart fa-xs"></i> Personal
+        </button>
       </div>
 
-      <div class="gallery-masonry" data-aos="fade-up" data-aos-delay="100">
-        <div class="gallery-item" style="min-height:240px" data-category="events">
-          <img src="assets/images/Gallery/AIHackathonTeam.jpg" alt="Hackathon team photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Hackathon Team</div>
-        </div>
-        <div class="gallery-item" style="min-height:320px" data-category="work">
-          <img src="assets/images/Gallery/IOTProject.jpg" alt="IoT project photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">IoT Project</div>
-        </div>
-        <div class="gallery-item" style="min-height:200px" data-category="personal">
-          <img src="assets/images/Gallery/bestFriend10.jpg" alt="Friendship photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Friendship Memory</div>
-        </div>
-        <div class="gallery-item" style="min-height:280px" data-category="events">
-          <img src="assets/images/Gallery/ElocutionProgram.jpg" alt="Elocution program photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Elocution Program</div>
-        </div>
-        <div class="gallery-item" style="min-height:220px" data-category="work">
-          <img src="assets/images/Gallery/SmartHomeAutomation.png" alt="Smart home automation project" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Smart Home Automation</div>
-        </div>
-        <div class="gallery-item" style="min-height:300px" data-category="events">
-          <img src="assets/images/Gallery/SportsWeek.jpg" alt="Sports week event photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Sports Week</div>
-        </div>
-        <div class="gallery-item" style="min-height:260px" data-category="work">
-          <img src="assets/images/Gallery/FirstSemester.jpg" alt="First semester photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">College Beginning</div>
-        </div>
-        <div class="gallery-item" style="min-height:200px" data-category="travel">
-          <img src="assets/images/Gallery/FewaLake.jpg" alt="Fewa lake travel photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Fewa Lake</div>
-        </div>
-        <div class="gallery-item" style="min-height:260px" data-category="personal">
-          <img src="assets/images/Gallery/Holi.jpg" alt="Holi celebration" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Holi Celebration</div>
-        </div>
-        <div class="gallery-item" style="min-height:280px" data-category="work">
-          <img src="assets/images/Gallery/labUniform.jpg" alt="Lab uniform photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Lab Life</div>
-        </div>
-        <div class="gallery-item" style="min-height:220px" data-category="personal">
-          <img src="assets/images/Gallery/ChildHood.jpg" alt="Childhood photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Childhood Memory</div>
-        </div>
-        <div class="gallery-item" style="min-height:300px" data-category="events">
-          <img src="assets/images/Gallery/plus2WelcomeProg.jpg" alt="Plus two welcome program" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
-          <div class="gallery-item-overlay"><div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div></div>
-          <div style="position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent 0%,rgba(0,0,0,0.72) 100%);color:#fff;z-index:2;font-size:var(--fs-xs);font-weight:var(--fw-semibold)">Welcome Program</div>
-        </div>
-      </div>
+      <!-- Masonry Grid — 29 images total (5 special + 24 existing) -->
+      <div class="gallery-masonry" id="gallery-masonry" data-aos="fade-up" data-aos-delay="100">
 
-      <!-- Add Your Photos CTA -->
+        <!-- SPECIAL EVENTS (5 new images) -->
+        <div class="gallery-item" data-category="events"
+             data-title="Dristi Lagani &mdash; Special Event">
+          <img src="assets/images/Gallery/SpecialEvent-DristiLagani.jpg"
+               alt="Dristi Lagani &mdash; Special College Event at NCIT"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3C5; Special Event</span>
+            <span class="gallery-caption__title">Dristi Lagani</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="work"
+             data-title="Minor Project &mdash; BE Engineering Showcase">
+          <img src="assets/images/Gallery/SpecialEvent-MinorProject.jpg"
+               alt="Minor Project Showcase &mdash; BE Computer Engineering, NCIT"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F4BB; Project</span>
+            <span class="gallery-caption__title">Minor Project Showcase</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="work"
+             data-title="Shopping Web App &mdash; Full Stack Project">
+          <img src="assets/images/Gallery/SpecialEvent-ShoppingWebApp.jpg"
+               alt="Shopping Web App &mdash; Full Stack Development Project Demo"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-cart-shopping fa-xs"></i> Web Dev</span>
+            <span class="gallery-caption__title">Shopping Web App</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="TEDx NCIT &mdash; TED Talks at College">
+          <img src="assets/images/Gallery/SpecialEvent-TedxNCIT.jpg"
+               alt="TEDx NCIT &mdash; TED Talks at Nepal College of Information Technology"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x2B50; TEDx</span>
+            <span class="gallery-caption__title">TEDx NCIT</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="WorldLink Visit &mdash; Industry Field Trip">
+          <img src="assets/images/Gallery/SpecialEvent-WorldLinkVisit.jpg"
+               alt="WorldLink Communications Visit &mdash; Industry Field Trip from NCIT"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3A4; Industry</span>
+            <span class="gallery-caption__title">WorldLink Visit</span>
+          </div>
+        </div>
+
+        <!-- EXISTING 24 GALLERY IMAGES -->
+        <div class="gallery-item" data-category="events"
+             data-title="National AI Hackathon 2026 &mdash; Team">
+          <img src="assets/images/Gallery/AIHackathonTeam.jpg"
+               alt="National AI Hackathon 2026 &mdash; Team Photo"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F4A1; Hackathon</span>
+            <span class="gallery-caption__title">AI Hackathon Team</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Best Friend &mdash; College Life">
+          <img src="assets/images/Gallery/bestFriend10.jpg"
+               alt="Best Friend &mdash; College Life Memories at NCIT"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-user-group fa-xs"></i> Personal</span>
+            <span class="gallery-caption__title">Best Friend</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Childhood &mdash; Early Years">
+          <img src="assets/images/Gallery/ChildHood.jpg"
+               alt="Childhood &mdash; Early Life Memories"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F91D; Childhood</span>
+            <span class="gallery-caption__title">Early Years</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Class 10 &mdash; School Days">
+          <img src="assets/images/Gallery/Class10.jpg"
+               alt="Class 10 &mdash; School Days"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3E5; School</span>
+            <span class="gallery-caption__title">Class 10</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="Elocution Program &mdash; Public Speaking">
+          <img src="assets/images/Gallery/ElocutionProgram.jpg"
+               alt="Elocution Program &mdash; Public Speaking Event"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x2B50; Event</span>
+            <span class="gallery-caption__title">Elocution Program</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="travel"
+             data-title="Fewa Lake &mdash; Pokhara, Nepal">
+          <img src="assets/images/Gallery/FewaLake.jpg"
+               alt="Fewa Lake &mdash; Pokhara, Nepal"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-mountain fa-xs"></i> Travel</span>
+            <span class="gallery-caption__title">Fewa Lake, Pokhara</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="First Semester &mdash; University Life at NCIT">
+          <img src="assets/images/Gallery/FirstSemester.jpg"
+               alt="First Semester &mdash; University Life at NCIT, Pokhara University"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3E5; University</span>
+            <span class="gallery-caption__title">First Semester</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="Holi &mdash; Festival of Colors">
+          <img src="assets/images/Gallery/Holi.jpg"
+               alt="Holi &mdash; Festival of Colors Celebration"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3A8; Festival</span>
+            <span class="gallery-caption__title">Holi Festival</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Hostel Life &mdash; NCIT Student Hostel">
+          <img src="assets/images/Gallery/HostelLife.jpg"
+               alt="Hostel Life &mdash; NCIT Student Hostel"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3E0; Hostel</span>
+            <span class="gallery-caption__title">Hostel Life</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Hostel Mate &mdash; College Friends">
+          <img src="assets/images/Gallery/hostelMate.jpg"
+               alt="Hostel Mate &mdash; College Friends at NCIT"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-people-group fa-xs"></i> Friends</span>
+            <span class="gallery-caption__title">Hostel Mate</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="work"
+             data-title="IoT Project &mdash; Smart Home Hardware">
+          <img src="assets/images/Gallery/IOTProject.jpg"
+               alt="IoT Project &mdash; Smart Home Hardware Setup with ESP32"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-microchip fa-xs"></i> IoT</span>
+            <span class="gallery-caption__title">IoT Project</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="work"
+             data-title="Engineering Lab &mdash; NCIT Practical Session">
+          <img src="assets/images/Gallery/labUniform.jpg"
+               alt="Engineering Lab &mdash; NCIT Lab Uniform and Practical Session"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F9EA; Lab</span>
+            <span class="gallery-caption__title">Engineering Lab</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="National AI Hackathon 2026">
+          <img src="assets/images/Gallery/NationalAIHackathon26.jpg"
+               alt="National AI Hackathon 2026 &mdash; Nepal"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F4A1; Hackathon</span>
+            <span class="gallery-caption__title">National AI Hackathon 2026</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="National AI Hackathon &mdash; Team Participation">
+          <img src="assets/images/Gallery/NationalAIHackthon.jpg"
+               alt="National AI Hackathon &mdash; Team Participation Nepal"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F916; AI Event</span>
+            <span class="gallery-caption__title">AI Hackathon</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Plus 2 Farewell &mdash; Graduation Photo">
+          <img src="assets/images/Gallery/Plus2farePhoto.jpeg"
+               alt="Plus 2 Farewell &mdash; Higher Secondary Graduation Photo"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3E5; Farewell</span>
+            <span class="gallery-caption__title">Plus 2 Farewell Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="Plus 2 Farewell Program">
+          <img src="assets/images/Gallery/Plus2FareWell.jpg"
+               alt="Plus 2 Farewell Program &mdash; Higher Secondary Event"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x2601;&#xFE0F; Farewell</span>
+            <span class="gallery-caption__title">Plus 2 Farewell Program</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Plus 2 Uniform &mdash; Higher Secondary School Days">
+          <img src="assets/images/Gallery/Plus2Uniform.jpeg"
+               alt="Plus 2 Uniform &mdash; Higher Secondary School Days"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F3E5; School</span>
+            <span class="gallery-caption__title">Plus 2 Uniform</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="Plus 2 Welcome Program &mdash; Orientation">
+          <img src="assets/images/Gallery/plus2WelcomeProg.jpg"
+               alt="Plus 2 Welcome Program &mdash; New Student Orientation"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-hand-wave fa-xs"></i> Welcome</span>
+            <span class="gallery-caption__title">Plus 2 Welcome Program</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Primary School &mdash; Childhood Education">
+          <img src="assets/images/Gallery/PrimarySchool.jpg"
+               alt="Primary School &mdash; Early Childhood Education Memories"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F91D; School</span>
+            <span class="gallery-caption__title">Primary School</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="Samman Patra &mdash; Certificate of Honor">
+          <img src="assets/images/Gallery/SammanPatra.jpg"
+               alt="Samman Patra &mdash; Certificate of Honor and Recognition"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag">&#x1F331; Honor</span>
+            <span class="gallery-caption__title">Samman Patra</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="work"
+             data-title="Smart Home Automation &mdash; ESP32 IoT Project">
+          <img src="assets/images/Gallery/SmartHomeAutomation.png"
+               alt="Smart Home Automation &mdash; ESP32 IoT Project Screenshot"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-house-signal fa-xs"></i> IoT</span>
+            <span class="gallery-caption__title">Smart Home Automation</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="Sports Week &mdash; NCIT College Athletics">
+          <img src="assets/images/Gallery/SportsWeek.jpg"
+               alt="Sports Week &mdash; NCIT College Athletics and Games Event"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-futbol fa-xs"></i> Sports</span>
+            <span class="gallery-caption__title">Sports Week</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="personal"
+             data-title="Token of Love &mdash; Special Moment">
+          <img src="assets/images/Gallery/tokenofLove.jpg"
+               alt="Token of Love &mdash; A Special Personal Moment"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-heart fa-xs"></i> Personal</span>
+            <span class="gallery-caption__title">Token of Love</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="events"
+             data-title="University Topper &mdash; Academic Achievement">
+          <img src="assets/images/Gallery/UniversityTopper.JPG"
+               alt="University Topper &mdash; Academic Excellence Achievement at NCIT"
+               loading="lazy" />
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="gallery-caption">
+            <span class="gallery-caption__tag"><i class="fa-solid fa-award fa-xs"></i> Achievement</span>
+            <span class="gallery-caption__title">University Topper</span>
+          </div>
+        </div>
+
+      </div><!-- /gallery-masonry -->
+
+      <!-- Bottom CTA -->
       <div class="card card--glass" style="margin-top:var(--space-10);text-align:center;padding:var(--space-10)" data-aos="fade-up">
-        <span style="font-size:3rem">📸</span>
+        <i class="fa-solid fa-camera" style="font-size:3rem;color:var(--color-primary)"></i>
         <h3 style="font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-top:var(--space-4)">
           A growing <span class="text-gradient">collection of memories</span>
         </h3>
         <p style="color:var(--text-muted);font-size:var(--fs-sm);margin-top:var(--space-3);max-width:50ch;margin-inline:auto;line-height:var(--lh-relaxed)">
-          These moments capture hackathons, college life, technical projects, and personal memories from my journey as a developer in Nepal.
+          These moments capture hackathons, college life, technical projects, and personal memories
+          from my journey as a developer in Nepal.
         </p>
         <div style="display:flex;gap:var(--space-3);justify-content:center;margin-top:var(--space-6);flex-wrap:wrap">
-          <span class="tag tag--primary"><i class="fa-solid fa-images fa-xs"></i> 12+ Memories</span>
-          <span class="tag tag--accent"><i class="fa-solid fa-microchip fa-xs"></i> Tech &amp; Events</span>
-          <span class="tag tag--success"><i class="fa-solid fa-circle fa-xs"></i> Updated regularly</span>
+          <span class="tag tag--primary">
+            &#x1F5BC;&#xFE0F; 29+ Memories
+          </span>
+          <span class="tag tag--accent">
+            <i class="fa-solid fa-microchip fa-xs"></i> Tech &amp; Events
+          </span>
+          <span class="tag tag--success">
+            <i class="fa-solid fa-circle fa-xs"></i> Updated regularly
+          </span>
         </div>
       </div>
-    </div>
+
+    </div><!-- /container -->
   </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer class="footer" role="contentinfo">
-  <div class="gradient-line"></div>
+  <div class="gradient-line" aria-hidden="true"></div>
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a href="index.html" class="navbar__logo"><div class="navbar__logo-mark">S</div><span class="navbar__logo-text">Shyam</span></a>
-        <p class="footer__brand-desc">Full Stack Developer &amp; AI/ML Enthusiast from Nepal 🇳🇵. Final year BE Computer Engineering at NCIT, Pokhara University.</p>
+        <a href="index.html" class="navbar__logo">
+          <div class="navbar__logo-mark">S</div>
+          <span class="navbar__logo-text">Shyam</span>
+        </a>
+        <p class="footer__brand-desc">Full Stack Developer &amp; AI/ML Enthusiast from Nepal. NCIT, Pokhara University.</p>
         <div class="footer__social">
-          <a href="https://github.com/SKS-650" target="_blank" rel="noopener" class="btn btn--social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/shyamkishorsah789/" target="_blank" rel="noopener" class="btn btn--social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.youtube.com/@ShyamKishorSah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/shyamkishorsah789" target="_blank" rel="noopener" class="btn btn--social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/ShyamKishorSah650" target="_blank" rel="noopener" class="btn btn--social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--social" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--social" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--social" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--social" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--social" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
         </div>
       </div>
-      <div class="footer__col"><h3 class="footer__col-title">Navigate</h3><ul class="footer__links">
-        <li><a href="index.html"        class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Home</a></li>
-        <li><a href="projects.html"     class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Projects</a></li>
-        <li><a href="certificates.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Certificates</a></li>
-        <li><a href="experience.html"   class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Experience</a></li>
-        <li><a href="gallery.html"      class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Gallery</a></li>
-      </ul></div>
-      <div class="footer__col"><h3 class="footer__col-title">More</h3><ul class="footer__links">
-        <li><a href="index.html#about"  class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>About</a></li>
-        <li><a href="index.html#skills" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Skills</a></li>
-        <li><a href="contact.html"      class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i>Contact</a></li>
-        <li><a href="assets/resume/resume.png" target="_blank" rel="noopener" class="footer__link"><i class="fa-solid fa-file-pdf fa-xs"></i>Resume</a></li>
-      </ul></div>
-      <div class="footer__col"><h3 class="footer__col-title">📧 Contact</h3><ul class="footer__links">
-        <li><a href="mailto:shyamkishrsah@gmail.com" class="footer__link"><i class="fa-solid fa-envelope fa-xs"></i>shyamkishrsah@gmail.com</a></li>
-        <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-location-dot fa-xs"></i>Balkumari, Lalitpur, Nepal 🇳🇵</span></li>
-        <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-university fa-xs"></i>NCIT, Pokhara University</span></li>
-        <li><span class="footer__link" style="cursor:default"><i class="fa-solid fa-circle fa-xs" style="color:var(--color-success)"></i>Available for opportunities</span></li>
-      </ul></div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">Navigate</h3>
+        <ul class="footer__links">
+          <li><a href="index.html"        class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Home</a></li>
+          <li><a href="projects.html"     class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Projects</a></li>
+          <li><a href="certificates.html" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Certificates</a></li>
+          <li><a href="experience.html"   class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Experience</a></li>
+          <li><a href="gallery.html"      class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">More</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#about"  class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> About</a></li>
+          <li><a href="index.html#skills" class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Skills</a></li>
+          <li><a href="contact.html"      class="footer__link"><i class="fa-solid fa-chevron-right fa-xs"></i> Contact</a></li>
+          <li><a href="assets/resume/resume.pdf" target="_blank" rel="noopener"
+                 class="footer__link"><i class="fa-solid fa-file-pdf fa-xs"></i> Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__col-title">Contact</h3>
+        <ul class="footer__links">
+          <li>
+            <a href="mailto:shyamkishorsah43@gmail.com" class="footer__link">
+              &#x1F4E7; shyamkishorsah43@gmail.com
+            </a>
+          </li>
+          <li>
+            <span class="footer__link" style="cursor:default">
+              <i class="fa-solid fa-location-dot fa-xs"></i> Balkumari, Lalitpur, Nepal
+            </span>
+          </li>
+          <li>
+            <span class="footer__link" style="cursor:default">
+              <i class="fa-solid fa-university fa-xs"></i> NCIT, Pokhara University
+            </span>
+          </li>
+          <li>
+            <span class="footer__link" style="cursor:default">
+              <i class="fa-solid fa-circle fa-xs" style="color:var(--color-success)"></i> Available for opportunities
+            </span>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">&copy; <span id="footer-year">2025</span> Shyam Kishor Sah. Crafted with <span style="color:var(--color-danger)">❤️</span> in Nepal 🇳🇵</p>
-      <a href="#" class="footer__back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      <p class="footer__copy">&copy; <span id="footer-year">2025</span> Shyam Kishor Sah. Crafted with
+        &#x1F4DA; in Nepal</p>
+      <p class="footer__copy" style="color:var(--text-faint)">Built with HTML &middot; CSS &middot; JavaScript &middot; GSAP &middot; Three.js</p>
+      <a href="#" class="footer__back-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
   </div>
 </footer>
 
-<div class="lightbox-backdrop" id="gallery-lightbox" aria-hidden="true">
-  <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Gallery image preview">
-    <button class="lightbox-close" type="button" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
-    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image"><i class="fa-solid fa-angle-left"></i></button>
-    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image"><i class="fa-solid fa-angle-right"></i></button>
-    <img class="lightbox-image" src="" alt="" />
-    <div class="lightbox-caption"></div>
-    <div class="lightbox-counter"></div>
-  </div>
-</div>
-
+<!-- SCRIPTS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" crossorigin="anonymous"></script>
@@ -375,42 +793,166 @@
 <script>
   document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Swiper
     if (typeof Swiper !== 'undefined') {
       new Swiper('.gallery-hero-swiper', {
-        loop: true, grabCursor: true, effect: 'coverflow',
-        coverflowEffect: { rotate: 30, stretch: 0, depth: 100, modifier: 1, slideShadows: false },
-        centeredSlides: true, slidesPerView: 'auto', spaceBetween: 30,
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        breakpoints: {
+          768:  { slidesPerView: 1.3, spaceBetween: 24 },
+          1024: { slidesPerView: 1.6, spaceBetween: 32 }
+        },
         pagination: { el: '.swiper-pagination', clickable: true },
         navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        autoplay: { delay: 4000, disableOnInteraction: false },
+        autoplay: { delay: 4000, disableOnInteraction: false }
       });
     }
-  });
 
-  document.querySelectorAll('.gallery-filter').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.gallery-filter').forEach(b => { b.classList.remove('active','btn--glow'); b.classList.add('btn--ghost'); });
-      btn.classList.add('active','btn--glow'); btn.classList.remove('btn--ghost');
-      const filter = btn.dataset.filter;
-      document.querySelectorAll('.gallery-masonry .gallery-item').forEach(item => {
-        const cat = item.dataset.category || 'all';
-        const show = filter === 'all' || cat === filter;
-        item.style.display = show ? '' : 'none';
-        if (show) item.style.animation = 'fadeInUp 0.4s ease both';
+    // Filter
+    document.querySelectorAll('.gallery-filter').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.gallery-filter').forEach(function (b) {
+          b.classList.remove('active', 'btn--glow');
+          b.classList.add('btn--ghost');
+        });
+        btn.classList.add('active', 'btn--glow');
+        btn.classList.remove('btn--ghost');
+
+        var filter = btn.dataset.filter;
+        document.querySelectorAll('#gallery-masonry .gallery-item').forEach(function (item) {
+          var cat  = item.dataset.category || 'all';
+          var show = filter === 'all' || cat === filter;
+          item.style.display = show ? '' : 'none';
+          if (show) { item.style.animation = 'fadeInUp 0.4s ease both'; }
+        });
       });
     });
+
   });
 </script>
 
 <style>
-  .gallery-filters { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-bottom: var(--space-10); }
-  .gallery-masonry { columns: 4 200px; column-gap: var(--space-4); }
-  .gallery-item    { break-inside: avoid; margin-bottom: var(--space-4); border-radius: var(--border-radius-lg); overflow: hidden; }
-  .swiper-button-next,.swiper-button-prev { color: var(--color-primary) !important; }
+  /* Gallery filters */
+  .gallery-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    margin-bottom: var(--space-10);
+  }
+
+  /* Masonry grid */
+  .gallery-masonry {
+    columns: 4 200px;
+    column-gap: var(--space-4);
+  }
+
+  /* Gallery item */
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: var(--space-4);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: var(--bg-elevated);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.06);
+  }
+
+  /* Caption overlay */
+  .gallery-caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: var(--space-3) var(--space-4);
+    background: linear-gradient(180deg, transparent 0%, rgba(5,8,22,0.88) 100%);
+    color: #fff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+  }
+
+  .gallery-item:hover .gallery-caption {
+    opacity: 1;
+  }
+
+  .gallery-caption__tag {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .gallery-caption__title {
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Featured slide label */
+  .gallery-slide-label {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: var(--space-5) var(--space-6);
+    background: linear-gradient(180deg, transparent 0%, rgba(5,8,22,0.85) 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .gallery-slide-label__tag {
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-accent-light);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .gallery-slide-label__title {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    font-family: var(--font-heading);
+  }
+
+  /* Swiper colours */
+  .swiper-button-next,
+  .swiper-button-prev { color: var(--color-primary) !important; }
   .swiper-pagination-bullet-active { background: var(--color-primary) !important; }
+
   .gallery-hero-swiper { max-width: 900px; margin-inline: auto; }
-  @media(max-width:640px) { .gallery-masonry { columns: 2 150px; } }
+
+  /* Responsive */
+  @media (max-width: 1024px) { .gallery-masonry { columns: 3 160px; } }
+  @media (max-width: 640px)  { .gallery-masonry { columns: 2 150px; } }
+  @media (max-width: 400px)  { .gallery-masonry { columns: 2 120px; } }
 </style>
 
 </body>
